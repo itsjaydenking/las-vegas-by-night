@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <li><a href="https://www.drivethrurpg.com/en/product/256795/vampire-the-masquerade-5th-edition?affiliate_id=2821891" target="_blank">V5 Core Rulebook</a></li>
             <li><a href="https://discord.com/channels/849707537120886814/1384959714638692423" target="_blank">V5 Las Vegas Discord</a></li>
             <li><a href="https://vtm.paradoxwikis.com/VTM_Wiki" target="_blank">VTM Wiki</a></li>
+            <li><a href="https://www.dmsguild.com/product/369197?affiliate_id=2821891" target="_blank">She is the Ancient<a></li>
             </ul>`;
         break;
 
@@ -87,7 +88,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <p class="app__view-text">
             Ways to support the project:
           </p>
-<a href='https://ko-fi.com/B0B6276FQ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>          `;
+<a href='https://ko-fi.com/B0B6276FQ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<a href="https://www.dmsguild.com/product/369197?affiliate_id=2821891" target="_blank">She is the Ancient<a> by Beth the Bard          `;
         break;
 
       default:
