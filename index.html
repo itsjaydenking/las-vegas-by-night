@@ -3,23 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Las Vegas by Night – Storyteller's Toolkit</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="page">
-      <header class="header">
-        <h1>Las Vegas by Night</h1>
-        <p>Welcome to Sin City</p>
+    <div class="app">
+      <!-- Header -->
+      <header class="app__header">
+        <h1 class="app__title">Las Vegas by Night</h1>
+        <p class="app__tagline">Interactive Storyteller’s Toolkit</p>
       </header>
-      <main class="main"></main>
-      <section class="history">
-        <h2>The Mirage and the Machine</h2>
-        
-      </section>
-      <section class="locations"></section>
-      <section class="kindred"></section>
-      <footer class="footer"></footer>
+
+      <!-- Sidebar Navigation -->
+      <aside class="app__sidebar">
+        <nav class="app__nav">
+          <ul class="app__nav-list">
+            <li class="app__nav-item">
+              <button class="app__nav-button" data-section="default">
+                🏠 Home
+              </button>
+            </li>
+            <li class="app__nav-item">
+              <button class="app__nav-button" data-section="history">
+                📜 History
+              </button>
+            </li>
+            <li class="app__nav-item">
+              <button class="app__nav-button" data-section="state">
+                🌆 State of the City
+              </button>
+            </li>
+            <li class="app__nav-item">
+              <button class="app__nav-button" data-section="kindred">
+                🩸 Kindred of Las Vegas
+              </button>
+            </li>
+            <li class="app__nav-item">
+              <button class="app__nav-button" data-section="others">
+                👥 Other Denizens
+              </button>
+            </li>
+            <li class="app__nav-item">
+              <button class="app__nav-button" data-section="resources">
+                🔗 Resources
+              </button>
+            </li>
+            <li class="app__nav-item">
+              <button class="app__nav-button" data-section="roller">
+                🎲 Dice Roller
+              </button>
+            </li>
+            <li class="app__nav-item">
+              <button class="app__nav-button" data-section="support">
+                🌟 Support
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main View Panel -->
+      <main class="app__main">
+        <section class="app__view" id="view-panel">
+          <h2 class="app__view-title">Welcome to Las Vegas by Night</h2>
+          <p class="app__view-text">
+            Select a section from the sidebar to begin exploring the city's dark
+            underbelly.
+          </p>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="app__footer">
+        <p class="app__footer-text">
+          Fan-made supplement for Vampire: The Masquerade. Not affiliated with
+          White Wolf Publishing or Paradox Interactive. Created by Bardhouse
+          Studios and Ebonmake Ink Creative Studios.
+        </p>
+      </footer>
     </div>
-    <script></script>
+
+    <script src="app.js"></script>
   </body>
 </html>
