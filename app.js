@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function loadSection(section) {
     switch (section) {
       case "history":
-        loadExternalContent("history.html");
+        loadExternalContent("./pages/history.html");
         break;
 
       case "state":
@@ -65,17 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         break;
 
       case "resources":
-        viewPanel.innerHTML = `
-          <h2 class="app__view-title">🔗 Resources</h2>
-          <p class="app__view-text">
-            Links to sourcebooks and tools.
-          </p>
-          <ul class="app__resources-list">
-            <li><a href="https://www.drivethrurpg.com/en/product/256795/vampire-the-masquerade-5th-edition?affiliate_id=2821891" target="_blank">V5 Core Rulebook</a></li>
-            <li><a href="https://discord.com/channels/849707537120886814/1384959714638692423" target="_blank">V5 Las Vegas Discord</a></li>
-            <li><a href="https://vtm.paradoxwikis.com/VTM_Wiki" target="_blank">VTM Wiki</a></li>
-            <li><a href="https://www.dmsguild.com/product/369197?affiliate_id=2821891" target="_blank">She is the Ancient<a></li>
-            </ul>`;
+        loadExternalContent("./pages/resources.html");
         break;
 
       case "roller":
