@@ -56,3 +56,27 @@
 .content__body {
   margin-bottom: 1rem;
 }
+
+.content__list {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.content__list-item {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.content__link {
+  color: var(--color-blood-red-bright);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.content__link:hover {
+  color: var(--color-blood-red);
+}
+
+

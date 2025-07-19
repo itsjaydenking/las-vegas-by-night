@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         break;
 
       case "resources":
-        loadExternalContent("./pages/resources.html");
+        loadExternalContent("./sections/resources.html");
         break;
 
       case "roller":
@@ -85,9 +85,13 @@ document.addEventListener("DOMContentLoaded", () => {
       default:
         viewPanel.innerHTML = `
           <h2 class="content__title">Welcome to Las Vegas by Night</h2>
+          <h3 class="content__heading">A Dark and Twisted City</h3>
+          <h4 class="content__subheading">Beneath the Neon Lights</h4>
           <p class="content__body">
-            Select a section from the sidebar to begin exploring.
-          </p>`;
+            Select a section from the sidebar to begin exploring the city's dark
+            underbelly.
+          </p>
+ `;
     }
   }
 
