@@ -1,0 +1,8 @@
+:root {
+  --color-text: rgb(240, 240, 240);
+  --color-blood-red: rgb(140, 3, 3);
+  --color-blood-red-bright: rgb(210, 3, 3);
+  --color-dark: rgb(50, 50, 50);
+  --color-darkest: rgb(10, 10, 10);
+  --color-darker: rgb(30, 30, 30);
+}
