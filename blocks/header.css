@@ -1,0 +1,19 @@
+.header {
+  grid-area: header;
+  background-color: var(--color-darkest);
+  text-align: center;
+  border-bottom: 2px solid var(--color-blood-red);
+  margin: 0;
+}
+
+.header__title {
+  color: var(--color-blood-red-bright);
+  margin-bottom: 0.25rem;
+  margin-top: 1rem;
+}
+
+.header__tagline {
+  font-style: italic;
+  color: var(--color-text);
+  margin: .75rem 0;
+}

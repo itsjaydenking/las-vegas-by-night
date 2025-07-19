@@ -1,0 +1,13 @@
+.footer {
+  grid-area: footer;
+  text-align: center;
+  font-size: 0.9 rem;
+  border-top: 2px solid var(--color-blood-red);
+  background-color: var(--color-darkest);
+}
+
+.footer__text {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  color: var(--color-blood-red);
+}

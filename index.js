@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const viewPanel = document.getElementById("view-panel");
-  const navButtons = document.querySelectorAll(".app__nav-button");
+  const navButtons = document.querySelectorAll(".sidebar__nav-button");
 
   navButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -12,13 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function setActiveButton(activeButton) {
     navButtons.forEach((btn) =>
-      btn.classList.remove("app__nav-button--active")
+      btn.classList.remove("sidebar__nav-button--active")
     );
-    activeButton.classList.add("app__nav-button--active");
+    activeButton.classList.add("sidebar__nav-button--active");
   }
 
   function loadExternalContent(url) {
-    viewPanel.innerHTML = `<p class="app__view-text">Loading...</p>`;
+    viewPanel.innerHTML = `<p class="content__body">Loading...</p>`;
     fetch(url)
       .then((response) => {
         if (!response.ok) {
@@ -30,52 +30,42 @@ document.addEventListener("DOMContentLoaded", () => {
         viewPanel.innerHTML = html;
       })
       .catch((error) => {
-        viewPanel.innerHTML = `<p class="app__view-text">Error loading content: ${error.message}</p>`;
+        viewPanel.innerHTML = `<p class="content__body">Error loading content: ${error.message}</p>`;
       });
   }
 
   function loadSection(section) {
     switch (section) {
       case "history":
-        loadExternalContent("history.html");
+        loadExternalContent("./sections/history.html");
         break;
 
       case "state":
         viewPanel.innerHTML = `
-          <h2 class="app__view-title">🌆 State of the City (2020s)</h2>
-          <p class="app__view-text">
+          <h2 class="content__title">🌆 State of the City (2020s)</h2>
+          <p class="content__body">
             Current domains, rack zones, factions, politics.
           </p>`;
         break;
 
       case "kindred":
         viewPanel.innerHTML = `
-          <h2 class="app__view-title">🩸 Kindred of Las Vegas</h2>
-          <p class="app__view-text">
+          <h2 class="content__title">🩸 Kindred of Las Vegas</h2>
+          <p class="content__body">
             Clans, SPCs, and major figures.
           </p>`;
         break;
 
       case "others":
         viewPanel.innerHTML = `
-          <h2 class="app__view-title">👥 Other Denizens</h2>
-          <p class="app__view-text">
+          <h2 class="content__title">👥 Other Denizens</h2>
+          <p class="content__body">
             Mortals, ghouls, and other supernaturals.
           </p>`;
         break;
 
       case "resources":
-        viewPanel.innerHTML = `
-          <h2 class="app__view-title">🔗 Resources</h2>
-          <p class="app__view-text">
-            Links to sourcebooks and tools.
-          </p>
-          <ul class="app__resources-list">
-            <li><a href="https://www.drivethrurpg.com/en/product/256795/vampire-the-masquerade-5th-edition?affiliate_id=2821891" target="_blank">V5 Core Rulebook</a></li>
-            <li><a href="https://discord.com/channels/849707537120886814/1384959714638692423" target="_blank">V5 Las Vegas Discord</a></li>
-            <li><a href="https://vtm.paradoxwikis.com/VTM_Wiki" target="_blank">VTM Wiki</a></li>
-            <li><a href="https://www.dmsguild.com/product/369197?affiliate_id=2821891" target="_blank">She is the Ancient<a></li>
-            </ul>`;
+        loadExternalContent("./sections/resources.html");
         break;
 
       case "roller":
@@ -84,8 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       case "support":
         viewPanel.innerHTML = `
-        <h2 class="app__view-title">🌟 Support</h2>
-          <p class="app__view-text">
+        <h2 class="content__title">🌟 Support</h2>
+          <p class="content__body">
             Ways to support the project:
           </p>
 <a href='https://ko-fi.com/B0B6276FQ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
@@ -94,16 +84,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
       default:
         viewPanel.innerHTML = `
-          <h2 class="app__view-title">Welcome to Las Vegas by Night</h2>
-          <p class="app__view-text">
-            Select a section from the sidebar to begin exploring.
-          </p>`;
+          <h2 class="content__title">Welcome to Las Vegas by Night</h2>
+          <h3 class="content__heading">A Dark and Twisted City</h3>
+          <h4 class="content__subheading">Beneath the Neon Lights</h4>
+          <p class="content__body">
+            Select a section from the sidebar to begin exploring the city's dark
+            underbelly.
+          </p>
+ `;
     }
   }
 
   function renderDiceRoller() {
     viewPanel.innerHTML = `
-      <h2 class="app__view-title">🎲 Dice Roller</h2>
+      <h2 class="content__title">🎲 Dice Roller</h2>
 <div class="app__roller">
   <label class="app__roller-label">
     Total Dice:
