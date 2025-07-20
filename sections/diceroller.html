@@ -1,19 +1,47 @@
 <section class="content scrollbar" id="view-panel">
   <h2 class="content__title">🎲 Dice Roller</h2>
-  <div class="app__roller">
-  <label class="app__roller-label">
-    Total Dice:
-    <input class="app__roller-input" id="total-dice" type="number" min="1" value="6">
-  </label>
-  <label class="app__roller-label">
-    Hunger Dice:
-    <input class="app__roller-input" id="hunger-dice" type="number" min="0" value="1">
-  </label>
-  <label class="app__roller-label">
-    Difficulty (optional):
-    <input class="app__roller-input" id="difficulty" type="number" min="0" placeholder="e.g. 2">
-  </label>
-  <button class="app__roller-button" id="roll-button">Roll Dice</button>
-  <div id="roller-results" class="app__roller-results"></div>
-</div>`
+  <div class="roller">
+    <div class="roller__controls">
+      <label class="roller__label">
+        Total Dice:
+        <input
+          class="roller__input"
+          id="total-dice"
+          type="number"
+          min="1"
+          max="20"
+          value="1"
+          required
+        />
+      </label>
+      <label class="roller__label">
+        Hunger Dice:
+        <input
+          class="roller__input"
+          id="hunger-dice"
+          type="number"
+          min="0"
+          max="5"
+          value="0"
+          required
+        />
+      </label>
+      <label class="roller__label">
+        Difficulty (optional):
+        <input
+          class="roller__input"
+          id="difficulty"
+          type="number"
+          min="0"
+          max="10"
+          value=""
+        />
+      </label>
+      <button class="roller__button" id="roll-button">Roll Dice</button>
+    </div>
+    <h3 class="content__heading">Dice Results</h3>
+    <div id="roller-results" class="roller__results">
+      <p class="roller__placeholder">Click "Roll Dice" to see results</p>
+    </div>
+  </div>
 </section>

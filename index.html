@@ -20,9 +20,7 @@
       <aside class="sidebar">
         <h2 class="sidebar__title">Navigation</h2>
         <div class="toggle-group">
-          <button class="toggle" aria-label="Toggle Dark Mode">
-            🌙
-          </button>
+          <button class="toggle" aria-label="Toggle Dark Mode">🌙</button>
         </div>
         <nav class="nav">
           <ul class="nav__list">
@@ -58,7 +56,7 @@
               </button>
             </li>
             <li class="nav__item">
-              <button class="nav__button" data-section="roller">
+              <button class="nav__button" data-section="diceroller">
                 🎲 Dice Roller
               </button>
             </li>
@@ -69,13 +67,49 @@
       <!-- Main View Panel -->
       <main class="main">
         <section class="content scrollbar" id="view-panel">
-          <h2 class="content__title">Welcome to Las Vegas by Night</h2>
-          <h3 class="content__heading">A Dark and Twisted City</h3>
-          <h4 class="content__subheading">Beneath the Neon Lights</h4>
-          <p class="content__body">
-            Select a section from the sidebar to begin exploring the city's dark
-            underbelly.
-          </p>
+          <h2 class="content__title">🎲 Dice Roller</h2>
+          <div class="roller">
+            <div class="roller__controls">
+              <label class="roller__label">
+                Total Dice:
+                <input
+                  class="roller__input"
+                  id="total-dice"
+                  type="number"
+                  min="1"
+                  required
+                />
+              </label>
+              <label class="roller__label">
+                Hunger Dice:
+                <input
+                  class="roller__input"
+                  id="hunger-dice"
+                  type="number"
+                  min="0"
+                  value="0"
+                  required
+                />
+              </label>
+              <label class="roller__label">
+                Difficulty (optional):
+                <input
+                  class="roller__input"
+                  id="difficulty"
+                  type="number"
+                  min="0"
+                  value="0"
+                />
+              </label>
+              <button class="roller__button" id="roll-button">Roll Dice</button>
+            </div>
+            <h3 class="content__heading">Dice Results</h3>
+            <div id="roller-results" class="roller__results">
+              <p class="roller__placeholder">
+                Click "Roll Dice" to see results
+              </p>
+            </div>
+          </div>
         </section>
       </main>
 

@@ -1,17 +1,14 @@
-/* ======================
-   ROLLER SECTION
-====================== */
-.app__roller {
+.roller {
   margin-top: 1rem;
 }
 
-.app__roller-label {
+.roller__label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
-.app__roller-input {
+.roller__input {
   width: 60px;
   margin-left: 0.5rem;
   background-color: #222;
@@ -20,7 +17,7 @@
   padding: 0.25rem;
 }
 
-.app__roller-button {
+.roller__button {
   display: block;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
@@ -31,36 +28,36 @@
   transition: background-color 0.3s;
 }
 
-.app__roller-button:hover {
+.roller__button:hover {
   background-color: #a00000;
 }
 
-.app__roller-results {
+.roller__results {
   margin-top: 1rem;
   background-color: #1a1a1a;
   padding: 1rem;
   border: 1px solid #800000;
 }
 
-.app__roller-text {
+.roller__text {
   margin-bottom: 0.5rem;
 }
 
-.app__roller-text--outcome {
+.roller__text--outcome {
   font-weight: bold;
   margin-top: 0.5rem;
 }
 
-.app__roller-text--hunger {
+.roller__text--hunger {
   color: #ff4444;
 }
 
-.app__roller-text--messy {
+.roller__text--messy {
   color: #ff6666;
   font-weight: bold;
 }
 
-.app__roller-text--bestial {
+.roller__text--bestial {
   color: #ff2222;
   font-weight: bold;
 }
