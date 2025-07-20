@@ -1,5 +1,5 @@
 <section class="content scrollbar" id="view-panel">
-  <h2 class="content__title">🎲 Dice Roller</h2>
+  <h2 class="content__title">🎲 V5 Dice Roller</h2>
   <div class="roller">
     <div class="roller__controls">
       <label class="roller__label">
@@ -37,11 +37,74 @@
           value=""
         />
       </label>
-      <button class="roller__button" id="roll-button">Roll Dice</button>
+      <div class="roller__buttons">
+        <button class="roller__button roller__button--primary" id="roll-button">
+          Roll Dice
+        </button>
+        <button class="roller__button roller__button--rouse" id="rouse-button">
+          🩸 Rouse Check
+        </button>
+        <button
+          class="roller__button roller__button--secondary"
+          id="clear-button"
+          disabled
+        >
+          Clear Dice
+        </button>
+      </div>
     </div>
+
     <h3 class="content__heading">Dice Results</h3>
     <div id="roller-results" class="roller__results">
       <p class="roller__placeholder">Click "Roll Dice" to see results</p>
+    </div>
+
+    <!-- Post-roll controls -->
+    <div class="roller__post-controls" id="post-controls" style="display: none">
+      <div class="roller__reroll-section">
+        <button
+          class="roller__button roller__button--willpower"
+          id="willpower-reroll-button"
+        >
+          🧠 Willpower Reroll
+        </button>
+        <p
+          class="roller__reroll-instructions"
+          id="reroll-instructions"
+          style="display: none"
+        >
+          Click up to 3 normal dice to reroll them, then click "Execute Reroll"
+        </p>
+        <button
+          class="roller__button roller__button--execute"
+          id="execute-reroll-button"
+          style="display: none"
+        >
+          Execute Reroll
+        </button>
+        <button
+          class="roller__button roller__button--cancel"
+          id="cancel-reroll-button"
+          style="display: none"
+        >
+          Cancel
+        </button>
+      </div>
+
+      <div class="roller__add-dice">
+        <button
+          class="roller__button roller__button--add"
+          id="add-normal-button"
+        >
+          + Normal Die
+        </button>
+        <button
+          class="roller__button roller__button--add"
+          id="add-hunger-button"
+        >
+          + Hunger Die
+        </button>
+      </div>
     </div>
   </div>
 </section>

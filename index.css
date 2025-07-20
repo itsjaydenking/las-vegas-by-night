@@ -8,7 +8,8 @@
 @import url(./blocks/main.css);
 @import url(./blocks/content.css);
 @import url(./blocks/scrollbar.css);
-@import url(./blocks/diceroller.css);
+@import url(./blocks/roller.css);
+@import url(./blocks/roller-buttons.css);
+@import url(./blocks/roller-dice.css);
+@import url(./blocks/roller-results.css);
 @import url(./blocks/footer.css);
-
-

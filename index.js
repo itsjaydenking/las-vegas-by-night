@@ -52,6 +52,12 @@ document.addEventListener("DOMContentLoaded", () => {
       case "history":
         loadExternalContent("./sections/history.html");
         break;
+      case "characters":
+        loadExternalContent("./sections/characters.html");
+        break;
+      case "locations":
+        loadExternalContent("./sections/locations.html");
+        break;
       case "diceroller":
         loadExternalContent("./sections/diceroller.html");
         break;

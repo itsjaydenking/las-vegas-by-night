@@ -1,0 +1,121 @@
+.roller__buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.roller__button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.roller__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.roller__button:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.roller__button:not(:disabled):active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Primary button (Roll Dice) */
+.roller__button--primary {
+  background: linear-gradient(135deg, var(--blood-red), var(--blood-red-bright));
+  color: var(--white);
+  border: 1px solid var(--blood-red-bright);
+}
+
+.roller__button--primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--blood-red-bright), #ff4444);
+  box-shadow: 0 4px 12px rgba(140, 3, 3, 0.4);
+}
+
+/* Rouse Check button */
+.roller__button--rouse {
+  background: linear-gradient(135deg, #8b0000, var(--blood-red));
+  color: var(--white);
+  border: 1px solid var(--blood-red);
+}
+
+.roller__button--rouse:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--blood-red), var(--blood-red-bright));
+  box-shadow: 0 4px 12px rgba(139, 0, 0, 0.5);
+}
+
+/* Secondary button (Clear) */
+.roller__button--secondary {
+  background: linear-gradient(135deg, var(--dark-grey), var(--grey));
+  color: var(--white);
+  border: 1px solid var(--grey);
+}
+
+.roller__button--secondary:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--grey), var(--light-grey));
+  color: var(--black);
+}
+
+/* Willpower button */
+.roller__button--willpower {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: var(--white);
+  border: 1px solid #357abd;
+}
+
+.roller__button--willpower:hover:not(:disabled) {
+  background: linear-gradient(135deg, #357abd, #2868a3);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.4);
+}
+
+/* Execute button */
+.roller__button--execute {
+  background: linear-gradient(135deg, #5cb85c, #449d44);
+  color: var(--white);
+  border: 1px solid #449d44;
+}
+
+.roller__button--execute:hover:not(:disabled) {
+  background: linear-gradient(135deg, #449d44, #398439);
+  box-shadow: 0 4px 12px rgba(92, 184, 92, 0.4);
+}
+
+/* Cancel button */
+.roller__button--cancel {
+  background: linear-gradient(135deg, #d9534f, #c9302c);
+  color: var(--white);
+  border: 1px solid #c9302c;
+}
+
+.roller__button--cancel:hover:not(:disabled) {
+  background: linear-gradient(135deg, #c9302c, #ac2925);
+  box-shadow: 0 4px 12px rgba(217, 83, 79, 0.4);
+}
+
+/* Add dice buttons */
+.roller__button--add {
+  background: linear-gradient(135deg, #f0ad4e, #ec971f);
+  color: var(--white);
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ec971f;
+}
+
+.roller__button--add:hover:not(:disabled) {
+  background: linear-gradient(135deg, #ec971f, #d58512);
+  box-shadow: 0 4px 12px rgba(240, 173, 78, 0.4);
+}

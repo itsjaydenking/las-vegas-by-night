@@ -1,0 +1,118 @@
+.roller__dice-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.roller__die {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  margin: 0.25rem;
+  position: relative;
+  border: 2px solid;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.roller__die--clickable {
+  cursor: pointer;
+}
+
+.roller__die--clickable:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.roller__die--selected {
+  border-color: #4a90e2 !important;
+  box-shadow: 0 0 15px rgba(74, 144, 226, 0.8) !important;
+  transform: scale(1.15) translateY(-3px);
+  z-index: 10;
+}
+
+.roller__die-symbol {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.roller__die-value {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-top: 3px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Normal dice styling */
+.roller__die--normal {
+  background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+  border-color: #999;
+  color: #333;
+}
+
+.roller__die--normal.roller__die--fail {
+  background: linear-gradient(135deg, #e8e8e8, #d0d0d0);
+  border-color: #777;
+}
+
+.roller__die--normal.roller__die--success {
+  background: linear-gradient(135deg, #98fb98, #32cd32);
+  border-color: #228b22;
+  color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 
+              0 0 10px rgba(50, 205, 50, 0.3);
+}
+
+.roller__die--normal.roller__die--crit {
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  border-color: #ff8c00;
+  color: #333;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 
+              0 0 15px rgba(255, 215, 0, 0.6);
+  animation: goldenGlow 2s infinite alternate;
+}
+
+/* Hunger dice styling */
+.roller__die--hunger {
+  background: linear-gradient(135deg, #8b0000, #dc143c);
+  border-color: #8b0000;
+  color: #fff;
+}
+
+.roller__die--hunger.roller__die--bestial {
+  background: linear-gradient(135deg, #000, #330000);
+  border-color: #000;
+  animation: bestialPulse 1.5s infinite;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5), 
+              0 0 15px rgba(51, 0, 0, 0.8);
+}
+
+.roller__die--hunger.roller__die--fail {
+  background: linear-gradient(135deg, #8b0000, #a0522d);
+  border-color: #654321;
+}
+
+.roller__die--hunger.roller__die--success {
+  background: linear-gradient(135deg, #dc143c, #ff6347);
+  border-color: #b22222;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 
+              0 0 10px rgba(220, 20, 60, 0.4);
+}
+
+.roller__die--hunger.roller__die--crit {
+  background: linear-gradient(135deg, #ff0000, #ff4500);
+  border-color: #cc0000;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 
+              0 0 20px rgba(255, 0, 0, 0.8);
+  animation: hungerGlow 1.5s infinite alternate;
+}
