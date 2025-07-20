@@ -1,0 +1,207 @@
+<section class="content scrollbar" id="view-panel">
+  <h2 class="content__title">📜 Las Vegas by Night Changelog</h2>
+
+  <h3 class="content__heading">Version 0.2.0</h3>
+  <h4 class="content__subheading">Major Dice Roller Update (July 20, 2025)</h4>
+
+  <div class="content__body">
+    <h4>🎲 Dice Roller Enhancements</h4>
+    <ul class="content__list">
+      <li class="content__list-item">
+        <strong>Complete V5 Dice System Implementation:</strong>
+        <ul>
+          <li>Fully functional hunger dice mechanics</li>
+          <li>Critical success calculations (pairs of 10s)</li>
+          <li>Messy critical detection for hunger dice 10s</li>
+          <li>Bestial failure tracking for hunger dice 1s</li>
+        </ul>
+      </li>
+
+      <li class="content__list-item">
+        <strong>🩸 Rouse Check Feature:</strong>
+        <ul>
+          <li>One-click rouse check button</li>
+          <li>Automatic setup (1 hunger die, difficulty 1)</li>
+          <li>Special messaging for rouse check results</li>
+          <li>Bestial compulsion warnings</li>
+        </ul>
+      </li>
+
+      <li class="content__list-item">
+        <strong>🧠 Willpower Reroll System:</strong>
+        <ul>
+          <li>Interactive dice selection for rerolls</li>
+          <li>Maximum 3 dice reroll limit</li>
+          <li>Visual feedback for selected dice</li>
+          <li>Clickable normal dice interface</li>
+          <li>Execute/Cancel reroll options</li>
+        </ul>
+      </li>
+
+      <li class="content__list-item">
+        <strong>➕ Dynamic Dice Management:</strong>
+        <ul>
+          <li>Add normal dice to existing pool</li>
+          <li>Add hunger dice to existing pool</li>
+          <li>5 hunger dice maximum enforcement</li>
+          <li>Clear dice functionality</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4>🎨 Visual Design Improvements</h4>
+    <ul class="content__list">
+      <li class="content__list-item">
+        <strong>CSS-Based Dice Visualization:</strong>
+        <ul>
+          <li>Color-coded dice (normal vs hunger)</li>
+          <li>Gradient backgrounds with shadows</li>
+          <li>Symbol-based result indicators</li>
+          <li>
+            Animated special results (bestial failures, critical successes)
+          </li>
+        </ul>
+      </li>
+
+      <li class="content__list-item">
+        <strong>Enhanced Button Styling:</strong>
+        <ul>
+          <li>Gradient backgrounds with hover effects</li>
+          <li>Color-coded by function (roll, rouse, clear, etc.)</li>
+          <li>Disabled state handling</li>
+          <li>Smooth transitions and animations</li>
+        </ul>
+      </li>
+
+      <li class="content__list-item">
+        <strong>Results Display Enhancements:</strong>
+        <ul>
+          <li>Outcome-based color coding</li>
+          <li>Success/failure visual indicators</li>
+          <li>Comprehensive result messaging</li>
+          <li>Warning systems for bestial compulsions</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4>🏗️ Code Architecture Improvements</h4>
+    <ul class="content__list">
+      <li class="content__list-item">
+        <strong>Modular CSS Organization:</strong>
+        <ul>
+          <li>Separated into component-specific files</li>
+          <li><code>roller.css</code> - Core roller styling</li>
+          <li><code>roller-buttons.css</code> - Button components</li>
+          <li><code>roller-dice.css</code> - Dice visualization</li>
+          <li><code>roller-results.css</code> - Results and animations</li>
+        </ul>
+      </li>
+
+      <li class="content__list-item">
+        <strong>JavaScript Refactoring:</strong>
+        <ul>
+          <li>Clean function separation</li>
+          <li>State management for reroll mode</li>
+          <li>Error handling and validation</li>
+          <li>Event listener organization</li>
+        </ul>
+      </li>
+
+      <li class="content__list-item">
+        <strong>Performance Optimizations:</strong>
+        <ul>
+          <li>Efficient DOM manipulation</li>
+          <li>Reduced redundant calculations</li>
+          <li>Smooth animation performance</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4>🎯 Vampire: The Masquerade V5 Compliance</h4>
+    <ul class="content__list">
+      <li class="content__list-item">
+        Accurate hunger dice mechanics implementation
+      </li>
+      <li class="content__list-item">
+        Proper critical success pairing (two 10s = 4 successes)
+      </li>
+      <li class="content__list-item">
+        Messy critical tracking for storyteller complications
+      </li>
+      <li class="content__list-item">
+        Bestial failure detection for compulsion checks
+      </li>
+      <li class="content__list-item">
+        Willpower reroll limitations (3 dice maximum)
+      </li>
+      <li class="content__list-item">Rouse check automation for blood usage</li>
+    </ul>
+
+    <h4>🐛 Bug Fixes</h4>
+    <ul class="content__list">
+      <li class="content__list-item">
+        Fixed dice calculation errors in critical success determination
+      </li>
+      <li class="content__list-item">
+        Resolved issues with hunger dice validation
+      </li>
+      <li class="content__list-item">Corrected reroll mode state management</li>
+      <li class="content__list-item">Improved error handling for edge cases</li>
+      <li class="content__list-item">
+        Fixed CSS import order and dependencies
+      </li>
+    </ul>
+  </div>
+
+  <h3 class="content__heading">Version 0.1.0</h3>
+  <h4 class="content__subheading">Initial Release (July 18, 2025)</h4>
+  <div class="content__body">
+    <ul class="content__list">
+      <li class="content__list-item">
+        Basic project structure and navigation system
+      </li>
+      <li class="content__list-item">Gothic-themed interface design</li>
+      <li class="content__list-item">
+        Modular CSS architecture with component separation
+      </li>
+      <li class="content__list-item">Dynamic content loading system</li>
+      <li class="content__list-item">Initial dice roller foundation</li>
+      <li class="content__list-item">
+        Responsive layout with custom scrollbars
+      </li>
+    </ul>
+  </div>
+
+  <h3 class="content__heading">🚀 Upcoming Features</h3>
+  <h4 class="content__subheading">Planned for Future Releases</h4>
+  <div class="content__body">
+    <ul class="content__list">
+      <li class="content__list-item">Character database and stat tracking</li>
+      <li class="content__list-item">Location guide with interactive maps</li>
+      <li class="content__list-item">Historical timeline with rich content</li>
+      <li class="content__list-item">NPC generator and relationship tracker</li>
+      <li class="content__list-item">Plot hook and story seed generator</li>
+      <li class="content__list-item">Session notes and chronicle tracking</li>
+      <li class="content__list-item">Dark mode toggle functionality</li>
+      <li class="content__list-item">Mobile responsive optimizations</li>
+    </ul>
+  </div>
+
+  <div
+    class="content__body"
+    style="
+      margin-top: 2rem;
+      padding: 1rem;
+      background: rgba(140, 3, 3, 0.1);
+      border-left: 3px solid var(--blood-red);
+      border-radius: 4px;
+    "
+  >
+    <p>
+      <strong>🩸 Storyteller Note:</strong> This toolkit is designed to enhance
+      your Vampire: The Masquerade sessions with accurate V5 mechanics and
+      atmospheric tools. All dice calculations follow official V5 rules for
+      authentic gameplay experience.
+    </p>
+  </div>
+</section>

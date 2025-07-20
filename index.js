@@ -64,8 +64,12 @@ document.addEventListener("DOMContentLoaded", () => {
       case "resources":
         loadExternalContent("./sections/resources.html");
         break;
+      case "changelog":
+        loadExternalContent("./sections/changelog.html");
+        break;
       default:
-        renderDefaultContent();
+         loadExternalContent("./sections/home.html");
+
     }
   }
 
