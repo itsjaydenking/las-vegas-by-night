@@ -2,7 +2,23 @@
   grid-area: main;
   overflow: hidden;
   padding: 2rem;
-  background-color: var(--white);
-  /* box-shadow: inset 10px 30px 30px rgba(0, 0, 0, 0.3),
-    inset -10px -30px 30px rgba(0, 0, 0, 0.3); */
+  background: linear-gradient(135deg, var(--white) 0%, var(--off-white) 100%);
+  box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.1),
+    inset -10px -10px 20px rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    rgba(0, 0, 0, 0.02) 100%
+  );
+  pointer-events: none;
 }

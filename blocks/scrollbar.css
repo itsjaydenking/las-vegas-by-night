@@ -1,0 +1,54 @@
+.scrollbar::-webkit-scrollbar {
+  width: 14px;
+  background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: linear-gradient(
+    180deg,
+    rgba(80, 80, 80, 0.1) 0%,
+    rgba(80, 80, 80, 0.3) 50%,
+    rgba(80, 80, 80, 0.1) 100%
+  );
+  border-radius: 8px;
+  margin: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    var(--blood-red) 0%,
+    var(--blood-red-bright) 50%,
+    var(--blood-red) 100%
+  );
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2),
+    0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    var(--blood-red-bright) 0%,
+    var(--blood-red) 50%,
+    var(--blood-red-bright) 100%
+  );
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.3),
+    0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.scrollbar::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Modifier for different scrollbar styles */
+.scrollbar--thin::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar--hidden::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const viewPanel = document.getElementById("view-panel");
-  const navButtons = document.querySelectorAll(".sidebar__nav-button");
+  const navButtons = document.querySelectorAll(".nav__button");
 
   navButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function setActiveButton(activeButton) {
     navButtons.forEach((btn) =>
-      btn.classList.remove("sidebar__nav-button--active")
+      btn.classList.remove("nav__button--active")
     );
-    activeButton.classList.add("sidebar__nav-button--active");
+    activeButton.classList.add("nav__button--active");
   }
 
   function loadExternalContent(url) {

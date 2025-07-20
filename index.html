@@ -19,56 +19,47 @@
       <!-- Sidebar Navigation -->
       <aside class="sidebar">
         <h2 class="sidebar__title">Navigation</h2>
-        <div class="sidebar__toggles">
-          <button class="sidebar__toggle" aria-label="Toggle Dark Mode">
+        <div class="toggle-group">
+          <button class="toggle" aria-label="Toggle Dark Mode">
             🌙
           </button>
         </div>
-        <nav class="sidebar__nav">
-          <ul class="sidebar__nav-list">
-            <li class="sidebar__nav-item">
-              <button class="sidebar__nav-button" data-section="default">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <button class="nav__button" data-section="default">
                 🏠 Home
               </button>
             </li>
-            <li class="sidebar__nav-item">
-              <button class="sidebar__nav-button" data-section="history">
+            <li class="nav__item">
+              <button class="nav__button" data-section="history">
                 📜 History
               </button>
             </li>
-            <li class="sidebar__nav-item">
-              <button class="sidebar__nav-button" data-section="state">
+            <li class="nav__item">
+              <button class="nav__button" data-section="state">
                 🌆 State of the City
               </button>
             </li>
-            <li class="sidebar__nav-item">
-              <button class="sidebar__nav-button" data-section="kindred">
+            <li class="nav__item">
+              <button class="nav__button" data-section="kindred">
                 🩸 Kindred of Las Vegas
               </button>
             </li>
-            <li class="sidebar__nav-item">
-              <button class="sidebar__nav-button" data-section="others">
+            <li class="nav__item">
+              <button class="nav__button" data-section="others">
                 👥 Other Denizens
               </button>
             </li>
-            <li class="sidebar__nav-item">
-              <button class="sidebar__nav-button" data-section="locations">
-                🔖 Bookmarks (Inactive)
-              </button>
-            </li>
-            <li class="sidebar__nav-item">
-              <button class="sidebar__nav-button" data-section="resources">
+
+            <li class="nav__item">
+              <button class="nav__button" data-section="resources">
                 🔗 Resources
               </button>
             </li>
-            <li class="sidebar__nav-item">
-              <button class="sidebar__nav-button" data-section="roller">
+            <li class="nav__item">
+              <button class="nav__button" data-section="roller">
                 🎲 Dice Roller
-              </button>
-            </li>
-            <li class="sidebar__nav-item">
-              <button class="sidebar__nav-button" data-section="support">
-                🌟 Support
               </button>
             </li>
           </ul>
@@ -77,7 +68,7 @@
 
       <!-- Main View Panel -->
       <main class="main">
-        <section class="main__view content" id="view-panel">
+        <section class="content scrollbar" id="view-panel">
           <h2 class="content__title">Welcome to Las Vegas by Night</h2>
           <h3 class="content__heading">A Dark and Twisted City</h3>
           <h4 class="content__subheading">Beneath the Neon Lights</h4>
@@ -90,11 +81,29 @@
 
       <!-- Footer -->
       <footer class="footer">
-        <p class="footer__text">
-          Fan-made supplement for Vampire: The Masquerade. Not affiliated with
-          White Wolf Publishing or Paradox Interactive. Created by Bardhouse
-          Studios and Ebonmake Ink Creative Studios.
-        </p>
+        <div class="footer__text">
+          <div class="footer__credits">
+            Created by Bardhouse Studios & Ebonmane Ink Creative Studios
+          </div>
+          <div class="footer__links">
+            <a
+              href="https://discord.gg/K9dfTxHMrW"
+              class="footer__link"
+              target="_blank"
+              >Discord</a
+            >
+            <a
+              href="https://ko-fi.com/itsjaydenking/5"
+              target="_blank"
+              class="footer__link"
+              >Buy a Coffee</a
+            >
+          </div>
+          <div class="footer__disclaimer">
+            Vampire: The Masquerade © Paradox Interactive<br />
+            This is an unofficial fan project
+          </div>
+        </div>
       </footer>
     </div>
 

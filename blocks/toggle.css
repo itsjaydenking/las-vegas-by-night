@@ -1,0 +1,41 @@
+.toggle {
+  width: 40px;
+  height: 40px;
+  background: var(--dark-grey);
+  border: 2px solid var(--blood-red);
+  border-radius: 8px;
+  color: var(--off-white);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.toggle:hover {
+  background: var(--blood-red);
+  border-color: var(--blood-red-bright);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.toggle:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.toggle:focus {
+  outline: none;
+  border-color: var(--blood-red-bright);
+  box-shadow: 0 0 0 3px rgba(210, 3, 3, 0.3);
+}
+
+.toggle-group {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+  justify-content: center;
+}

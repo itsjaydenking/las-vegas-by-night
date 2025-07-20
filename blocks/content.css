@@ -2,40 +2,63 @@
   height: 100%;
   overflow-y: auto;
   box-sizing: border-box;
-  padding-right: 1rem;
+  padding: 1.5rem;
+  padding-right: 2rem;
   scrollbar-gutter: stable;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
 }
 
-/* Content specific styles */
+/* Typography elements */
 .content__title {
   color: var(--black);
-  border-bottom: 1px solid var(--off-black);
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 3px solid var(--blood-red);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .content__heading {
   color: var(--off-black);
-  border-bottom: 1px solid var(--dark-grey);
-  padding-bottom: 0.25rem;
-  margin-bottom: 0;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--dark-grey);
+  padding-bottom: 0.5rem;
+  margin: 2rem 0 1rem 0;
+  position: relative;
+}
+
+.content__heading::before {
+  content: "▶";
+  color: var(--blood-red);
+  margin-right: 0.5rem;
+  font-size: 0.8em;
 }
 
 .content__subheading {
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   color: var(--black);
-  border-left: 2px solid var(--grey);
-  padding-left: 0.5rem;
-  margin-bottom: 0;
+  font-size: 1.2rem;
+  border-left: 4px solid var(--blood-red);
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, rgba(140, 3, 3, 0.1) 0%, transparent 100%);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .content__body {
-  margin-top: 0.5rem;
-  line-height: 1.25;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--off-black);
 }
 
 .content__list {
   list-style: none;
-
   padding: 0;
   margin: 0;
 }
@@ -52,32 +75,4 @@
 
 .content__link:hover {
   color: var(--light-grey);
-}
-
-/* Custom scrollbar styles */
-.content::-webkit-scrollbar {
-  width: 8px;
-  background: transparent;
-}
-
-.content::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 8px;
-}
-
-.content::-webkit-scrollbar-thumb {
-  background: transparent;
-  border-radius: 8px;
-}
-
-.content:hover::-webkit-scrollbar-track {
-  background: var(--dark-grey);
-}
-
-.content:hover::-webkit-scrollbar-thumb {
-  background: var(--light-grey);
-}
-
-.content:hover::-webkit-scrollbar-thumb:hover {
-  background: var(--off-white);
 }
