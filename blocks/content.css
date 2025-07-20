@@ -6,6 +6,55 @@
   scrollbar-gutter: stable;
 }
 
+/* Content specific styles */
+.content__title {
+  color: var(--black);
+  border-bottom: 1px solid var(--off-black);
+  margin-bottom: 1rem;
+}
+
+.content__heading {
+  color: var(--off-black);
+  border-bottom: 1px solid var(--dark-grey);
+  padding-bottom: 0.25rem;
+  margin-bottom: 0;
+}
+
+.content__subheading {
+  margin-top: 0.5rem;
+  color: var(--black);
+  border-left: 2px solid var(--grey);
+  padding-left: 0.5rem;
+  margin-bottom: 0;
+}
+
+.content__body {
+  margin-top: 0.5rem;
+  line-height: 1.25;
+}
+
+.content__list {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.content__list-item {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.content__link {
+  color: var(--dark-grey);
+  transition: color 1s;
+}
+
+.content__link:hover {
+  color: var(--light-grey);
+}
+
+/* Custom scrollbar styles */
 .content::-webkit-scrollbar {
   width: 8px;
   background: transparent;
@@ -22,61 +71,13 @@
 }
 
 .content:hover::-webkit-scrollbar-track {
-  background: var(--color-darker);
+  background: var(--dark-grey);
 }
 
 .content:hover::-webkit-scrollbar-thumb {
-  background: var(--color-blood-red);
+  background: var(--light-grey);
 }
 
 .content:hover::-webkit-scrollbar-thumb:hover {
-  background: var(--color-blood-red-bright);
+  background: var(--off-white);
 }
-
-.content__title {
-  color: var(--color-blood-red-bright);
-  border-bottom: 1px solid var(--color-blood-red);
-  margin-bottom: 1rem;
-}
-
-.content__heading {
-  margin-top: 2rem;
-  color: var(--color-blood-red-bright);
-  border-bottom: 1px solid var(--color-blood-red);
-  padding-bottom: 0.25rem;
-}
-
-.content__subheading {
-  margin-top: 1.5rem;
-  color: var(--color-blood-red-bright);
-  border-left: 4px solid var(--color-blood-red);
-  padding-left: 0.5rem;
-}
-
-.content__body {
-  margin-bottom: 1rem;
-}
-
-.content__list {
-  list-style: none;
-
-  padding: 0;
-  margin: 0;
-}
-
-.content__list-item {
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-.content__link {
-  color: var(--color-blood-red-bright);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.content__link:hover {
-  color: var(--color-blood-red);
-}
-
-

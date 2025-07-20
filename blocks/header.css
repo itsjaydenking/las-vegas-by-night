@@ -1,19 +1,19 @@
 .header {
   grid-area: header;
-  background-color: var(--color-darkest);
+  background-color: var(--light-grey);
   text-align: center;
-  border-bottom: 2px solid var(--color-blood-red);
+  border-bottom: 2px solid var(--blood-red-bright);
   margin: 0;
 }
 
 .header__title {
-  color: var(--color-blood-red-bright);
+  color: var(--black);
   margin-bottom: 0.25rem;
   margin-top: 1rem;
 }
 
 .header__tagline {
   font-style: italic;
-  color: var(--color-text);
+  color: var(--off-black);
   margin: .75rem 0;
 }
