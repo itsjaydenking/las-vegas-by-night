@@ -68,18 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
         loadExternalContent("./sections/changelog.html");
         break;
       default:
-         loadExternalContent("./sections/home.html");
-
+        loadExternalContent("./sections/home.html");
     }
-  }
-
-  function renderDefaultContent() {
-    viewPanel.innerHTML = `
-      <section class="content scrollbar">
-        <h2 class="content__title">🌃 Welcome to Las Vegas by Night</h2>
-        <p class="content__body">Select a section from the navigation to begin exploring the dark secrets of Sin City...</p>
-      </section>
-    `;
   }
 
   // Load default content
