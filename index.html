@@ -35,16 +35,35 @@
               </button>
             </li>
             <li class="nav__item">
-              <button class="nav__button" data-section="characters">
-                🩸 Characters of Las Vegas
+              <button class="nav__button" data-section="locations">
+                🌆 Welcome to Sin City
               </button>
             </li>
             <li class="nav__item">
-              <button class="nav__button" data-section="locations">
-                🌆 Locations of Las Vegas
+              <button class="nav__button" data-section="kindred">
+                🧛🏿 Kindred of the Night
               </button>
             </li>
-
+            <li class="nav__item">
+              <button class="nav__button" data-section="coteries">
+                🩸 Coteries of Las Vegas
+              </button>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button" data-section="lore-sheets">
+                📃 Lore Sheets
+              </button>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button" data-section="chronicles">
+                🗨️ Chronicles of Las Vegas
+              </button>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button" data-section="additional">
+                📚 Additional Reading
+              </button>
+            </li>
             <li class="nav__item">
               <button class="nav__button" data-section="resources">
                 🔗 Resources
@@ -65,53 +84,7 @@
       </aside>
 
       <!-- Main View Panel -->
-      <main class="main">
-        <section class="content scrollbar" id="view-panel">
-          <h2 class="content__title">🎲 Dice Roller</h2>
-          <div class="roller">
-            <div class="roller__controls">
-              <label class="roller__label">
-                Total Dice:
-                <input
-                  class="roller__input"
-                  id="total-dice"
-                  type="number"
-                  min="1"
-                  required
-                />
-              </label>
-              <label class="roller__label">
-                Hunger Dice:
-                <input
-                  class="roller__input"
-                  id="hunger-dice"
-                  type="number"
-                  min="0"
-                  value="0"
-                  required
-                />
-              </label>
-              <label class="roller__label">
-                Difficulty (optional):
-                <input
-                  class="roller__input"
-                  id="difficulty"
-                  type="number"
-                  min="0"
-                  value="0"
-                />
-              </label>
-              <button class="roller__button" id="roll-button">Roll Dice</button>
-            </div>
-            <h3 class="content__heading">Dice Results</h3>
-            <div id="roller-results" class="roller__results">
-              <p class="roller__placeholder">
-                Click "Roll Dice" to see results
-              </p>
-            </div>
-          </div>
-        </section>
-      </main>
+      <main class="main" id="view-panel"></main>
 
       <!-- Footer -->
       <footer class="footer">
@@ -140,8 +113,8 @@
             >
           </div>
           <div class="footer__disclaimer">
-            Vampire: The Masquerade © Paradox Interactive<br />
-            This is an unofficial fan project
+            Vampire: The Masquerade © Paradox Interactive - This is an
+            unofficial fan project
           </div>
         </div>
       </footer>
