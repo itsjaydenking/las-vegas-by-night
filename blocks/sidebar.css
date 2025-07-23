@@ -5,7 +5,7 @@
     var(--off-white) 0%,
     var(--light-grey) 100%
   );
-  padding: 1.5rem;
+  padding: 0.5rem;
   border-right: 3px solid var(--blood-red-bright);
   box-shadow: inset -5px 0 15px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -43,4 +43,3 @@
     transparent 100%
   );
 }
-

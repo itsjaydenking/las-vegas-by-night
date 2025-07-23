@@ -8,7 +8,7 @@
   text-align: center;
   border-bottom: 3px solid var(--blood-red-bright);
   margin: 0;
-  padding: 1.5rem 2rem;
+  padding: 0.75rem 1rem;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
