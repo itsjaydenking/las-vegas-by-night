@@ -1,0 +1,18 @@
+.content__callout {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(140, 3, 3, 0.1) 0%, rgba(140, 3, 3, 0.05) 100%);
+  border-left: 4px solid var(--blood-red);
+  border-radius: 6px;
+}
+
+.content__callout-title {
+  margin-top: 0;
+  color: var(--blood-red);
+  font-size: 1.2rem;
+}
+
+.content__callout-text {
+  margin-bottom: 0;
+  font-style: italic;
+}

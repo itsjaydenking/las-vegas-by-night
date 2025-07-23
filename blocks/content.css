@@ -50,6 +50,26 @@
   padding-bottom: 0.25rem;
 }
 
+.content__section {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--blood-red);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgba(140, 3, 3, 0.3);
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+
+.content__section::before {
+  content: "●";
+  color: var(--blood-red);
+  margin-right: 0.5rem;
+  font-size: 0.8em;
+}
+
 .content__body {
   margin-top: 0.75rem;
   margin-bottom: 1rem;
@@ -65,7 +85,6 @@
 
 .content__list-item {
   margin-bottom: 0.5rem;
-  font-weight: bold;
 }
 
 .content__link {
@@ -75,4 +94,109 @@
 
 .content__link:hover {
   color: var(--light-grey);
+  font-weight: bold;
+}
+
+/* Callout box */
+.content__callout {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(140, 3, 3, 0.1) 0%,
+    rgba(140, 3, 3, 0.05) 100%
+  );
+  border-left: 4px solid var(--blood-red);
+  border-radius: 6px;
+}
+
+.content__callout-title {
+  margin-top: 0;
+  color: var(--blood-red);
+  font-size: 1.2rem;
+}
+
+.content__callout-text {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/* Feature grid */
+.content__features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.content__feature-card {
+  padding: 1.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  border-radius: 8px;
+  border: 1px solid rgba(140, 3, 3, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content__feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(140, 3, 3, 0.15);
+}
+
+.content__feature-title {
+  margin-top: 0;
+  color: var(--blood-red);
+  font-size: 1.1rem;
+}
+
+.content__feature-description {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* Info boxes for different user types */
+.content__info-box {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border-left: 4px solid;
+}
+
+.content__info-box--storytellers {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+  border-left-color: var(--dark-grey);
+}
+
+.content__info-box--players {
+  background: linear-gradient(
+    135deg,
+    rgba(74, 144, 226, 0.1) 0%,
+    rgba(74, 144, 226, 0.05) 100%
+  );
+  border-left-color: #4a90e2;
+}
+
+.content__info-title {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.content__info-title--storytellers {
+  color: var(--dark-grey);
+}
+
+.content__info-title--players {
+  color: #4a90e2;
+}
+
+.content__info-text {
+  margin-bottom: 0;
+  line-height: 1.6;
 }

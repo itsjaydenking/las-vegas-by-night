@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Load dice roller script if it's the dice roller section
         if (url.includes("diceroller")) {
-          loadScript("./scripts/diceRoller.js").then(() => {
+          loadScript("./scripts/diceSystem.js").then(() => {
             // Initialize dice roller after script loads
             if (window.initializeDiceRoller) {
               window.initializeDiceRoller();
@@ -52,11 +52,23 @@ document.addEventListener("DOMContentLoaded", () => {
       case "history":
         loadExternalContent("./sections/history.html");
         break;
-      case "characters":
-        loadExternalContent("./sections/characters.html");
-        break;
       case "locations":
-        loadExternalContent("./sections/locations.html");
+        loadExternalContent("./sections/locations.html").then(() => {
+          loadScript("./scripts/locationsSystem.js").then(() => {
+            if (window.initializeLocationsSystem) {
+              window.initializeLocationsSystem();
+            }
+          });
+        });
+        break;
+      case "kindred":
+        loadExternalContent("./sections/kindred.html").then(() => {
+          loadScript("./scripts/kindredSystem.js").then(() => {
+            if (window.initializeKindredSystem) {
+              window.initializeKindredSystem();
+            }
+          });
+        });
         break;
       case "diceroller":
         loadExternalContent("./sections/diceroller.html");
@@ -67,11 +79,14 @@ document.addEventListener("DOMContentLoaded", () => {
       case "changelog":
         loadExternalContent("./sections/changelog.html");
         break;
-      default:
+      case "home":
         loadExternalContent("./sections/home.html");
+        break;
+      default:
+        loadExternalContent("./sections/default.html");
     }
   }
 
   // Load default content
-  loadSection("default");
+  loadSection("home");
 });

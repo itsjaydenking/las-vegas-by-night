@@ -7,6 +7,9 @@
 @import url(./blocks/toggle.css);
 @import url(./blocks/main.css);
 @import url(./blocks/content.css);
+@import url(./blocks/content-components.css);
+@import url(./blocks/kindred.css);
+@import url(./blocks/locations.css);
 @import url(./blocks/scrollbar.css);
 @import url(./blocks/roller.css);
 @import url(./blocks/roller-buttons.css);

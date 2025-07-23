@@ -1,0 +1,209 @@
+/* Clan Navigation */
+.kindred-nav {
+  margin-bottom: 2rem;
+}
+
+.kindred-nav__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+  list-style: none;
+  padding: 0;
+}
+
+.kindred-nav__item {
+  margin: 0;
+}
+
+.kindred-nav__button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border: 1px solid rgba(140, 3, 3, 0.3);
+  border-radius: 6px;
+  color: var(--off-black);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.kindred-nav__button:hover {
+  background: linear-gradient(135deg, rgba(140, 3, 3, 0.1) 0%, rgba(140, 3, 3, 0.05) 100%);
+  border-color: var(--blood-red);
+  color: var(--blood-red);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(140, 3, 3, 0.2);
+}
+
+.kindred-nav__button--active {
+  background: linear-gradient(135deg, var(--blood-red) 0%, rgba(140, 3, 3, 0.8) 100%);
+  border-color: var(--blood-red-bright);
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(140, 3, 3, 0.3);
+}
+
+.kindred-nav__button--active:hover {
+  background: linear-gradient(135deg, var(--blood-red-bright) 0%, var(--blood-red) 100%);
+}
+
+/* Clan Display */
+.clan-display {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border-radius: 8px;
+  border: 1px solid rgba(140, 3, 3, 0.2);
+  min-height: 200px;
+}
+
+.clan-display__placeholder {
+  text-align: center;
+  color: var(--dark-grey);
+  font-style: italic;
+  padding: 2rem;
+}
+
+.clan-display__header {
+  margin-bottom: 1.5rem;
+}
+
+.clan-display__description {
+  margin-bottom: 2rem;
+}
+
+/* Character List */
+.character-list {
+  margin-top: 2rem;
+}
+
+.character-list__header {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(140, 3, 3, 0.3);
+}
+
+.character-list__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.character-card {
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.02) 100%);
+  border: 1px solid rgba(140, 3, 3, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.character-card:hover {
+  background: linear-gradient(135deg, rgba(140, 3, 3, 0.1) 0%, rgba(140, 3, 3, 0.05) 100%);
+  border-color: var(--blood-red);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(140, 3, 3, 0.2);
+}
+
+.character-card--active {
+  background: linear-gradient(135deg, rgba(140, 3, 3, 0.15) 0%, rgba(140, 3, 3, 0.08) 100%);
+  border-color: var(--blood-red);
+  box-shadow: 0 2px 8px rgba(140, 3, 3, 0.3);
+}
+
+.character-card__name {
+  font-weight: bold;
+  color: var(--blood-red);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.character-card__epitaph {
+  font-style: italic;
+  color: var(--dark-grey);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.character-card__generation {
+  font-size: 0.8rem;
+  color: var(--off-black);
+}
+
+/* Character Display */
+.character-display {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
+  border: 2px solid var(--blood-red);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(140, 3, 3, 0.2);
+}
+
+.character-display__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(140, 3, 3, 0.3);
+}
+
+.character-display__name {
+  margin: 0;
+  color: var(--blood-red);
+  font-size: 1.8rem;
+}
+
+.character-display__clan {
+  color: var(--dark-grey);
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.character-display__quote {
+  background: rgba(140, 3, 3, 0.1);
+  padding: 1rem;
+  border-left: 4px solid var(--blood-red);
+  margin: 1rem 0;
+  font-style: italic;
+  border-radius: 4px;
+}
+
+.character-display__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.stat-block {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--blood-red);
+}
+
+.stat-block__title {
+  font-weight: bold;
+  color: var(--blood-red);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.stat-block__content {
+  color: var(--off-black);
+}
+
+.stat-block__content ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.stat-block__content li {
+  margin-bottom: 0.25rem;
+}

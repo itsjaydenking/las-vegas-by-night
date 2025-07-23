@@ -1,9 +1,51 @@
 <section class="content scrollbar" id="view-panel">
   <h2 class="content__title">🌆 Locations of Las Vegas</h2>
-  <h3 class="content__heading">Your Title Here</h3>
-  <h4 class="content__subheading"></h4>
-  <p class="content__body">
-    This is a placeholder section. Replace this text with your content. You can
-    add more details, images, or links as needed.
-  </p>
+
+  <!-- Location Category Navigation -->
+  <nav class="location-nav">
+    <h3 class="content__heading">Location Categories</h3>
+    <ul class="location-nav__categories">
+      <li class="location-nav__category">
+        <button class="location-nav__category-button" data-category="major">
+          🌃 Major Las Vegas
+        </button>
+      </li>
+      <li class="location-nav__category">
+        <button class="location-nav__category-button" data-category="nearby">
+          🏘️ Nearby Locations
+        </button>
+      </li>
+      <li class="location-nav__category">
+        <button class="location-nav__category-button" data-category="beyond">
+          🗺️ Beyond Las Vegas
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Area Navigation (shown after category selection) -->
+  <nav class="area-nav" id="area-nav" style="display: none">
+    <h4 class="content__subheading" id="area-nav-title">Areas</h4>
+    <ul class="area-nav__list" id="area-nav-list">
+      <!-- Dynamically populated -->
+    </ul>
+  </nav>
+
+  <!-- Location Information Display -->
+  <div id="location-display" class="location-display">
+    <div class="location-display__placeholder">
+      <p class="content__body">
+        Select a location category above to explore Las Vegas and beyond.
+      </p>
+    </div>
+  </div>
+
+  <!-- Specific Location Information Display -->
+  <div
+    id="specific-location-display"
+    class="specific-location-display"
+    style="display: none"
+  >
+    <!-- Specific location info will be dynamically loaded here -->
+  </div>
 </section>
