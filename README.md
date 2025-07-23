@@ -241,6 +241,9 @@ This project follows the **Dark Pack Community Content** guidelines established 
 - All contributors and playtesters who helped refine the toolkit
 - The storytellers and players who bring these stories to life
 
+**Contributors**
+- MangoSalsa: Setting Lore Continuity 
+
 **Inspired By:**
 - The rich lore and mechanics of Vampire: The Masquerade 5th Edition
 - The neon-soaked, surveillance-heavy atmosphere of modern Las Vegas
