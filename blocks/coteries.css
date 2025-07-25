@@ -1,0 +1,202 @@
+/* Coterie Type Navigation */
+.coterie-nav {
+  margin: 2rem 0;
+}
+
+.coterie-nav__types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.coterie-nav__type {
+  margin: 0;
+}
+
+.coterie-nav__type-button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(248, 249, 250, 0.9) 100%);
+  border: 1px solid rgba(140, 3, 3, 0.3);
+  border-radius: 6px;
+  color: var(--off-black);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-size: 0.9rem;
+  display: block;
+  box-sizing: border-box;
+}
+
+.coterie-nav__type-button:hover {
+  background: linear-gradient(135deg, rgba(140, 3, 3, 0.1) 0%, rgba(140, 3, 3, 0.05) 100%);
+  border-color: var(--blood-red);
+  color: var(--blood-red);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(140, 3, 3, 0.2);
+}
+
+.coterie-nav__type-button--active {
+  background: linear-gradient(135deg, var(--blood-red) 0%, rgba(140, 3, 3, 0.8) 100%);
+  border-color: var(--blood-red-bright);
+  color: var(--white);
+  box-shadow: 0 2px 8px rgba(140, 3, 3, 0.3);
+}
+
+.coterie-nav__type-button--active:hover {
+  background: linear-gradient(135deg, var(--blood-red-bright) 0%, var(--blood-red) 100%);
+}
+
+/* Type Display */
+.coterie-type-display {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  border: 1px solid rgba(140, 3, 3, 0.2);
+}
+
+.coterie-type-display__placeholder {
+  text-align: center;
+  padding: 2rem;
+  color: var(--grey);
+  font-style: italic;
+}
+
+.coterie-type-info {
+  margin-bottom: 2rem;
+}
+
+.coterie-traits {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(140, 3, 3, 0.05);
+  border-radius: 6px;
+  border-left: 4px solid var(--blood-red);
+}
+
+/* Coterie List */
+.coterie-list {
+  margin-top: 2rem;
+}
+
+.coterie-list__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.coterie-card {
+  padding: 1.25rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 249, 250, 0.8) 100%);
+  border: 1px solid rgba(140, 3, 3, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.coterie-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(140, 3, 3, 0.2);
+  border-color: var(--blood-red);
+}
+
+.coterie-card__name {
+  margin: 0 0 0.75rem 0;
+  color: var(--blood-red);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.coterie-card__members {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.85rem;
+  color: var(--dark-grey);
+}
+
+.coterie-card__agenda {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--off-black);
+}
+
+/* Specific Coterie Display */
+.specific-coterie-display {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  border: 2px solid var(--blood-red);
+  box-shadow: 0 4px 12px rgba(140, 3, 3, 0.15);
+}
+
+.specific-coterie-info {
+  max-width: 100%;
+}
+
+.specific-coterie-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.coterie-detail {
+  padding: 1rem;
+  background: rgba(140, 3, 3, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid var(--blood-red);
+}
+
+.coterie-detail h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--blood-red);
+}
+
+.coterie-detail p,
+.coterie-detail ul {
+  margin-bottom: 0;
+}
+
+.coterie-quote {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(140, 3, 3, 0.1) 0%, rgba(140, 3, 3, 0.05) 100%);
+  border-radius: 8px;
+  border: 1px solid rgba(140, 3, 3, 0.3);
+  margin-top: 1rem;
+}
+
+.coterie-quote blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--blood-red);
+  margin: 0.5rem 0 0 0;
+}
+
+.content__button {
+  margin: 1.5rem 0 0 0;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--blood-red) 0%, rgba(140, 3, 3, 0.8) 100%);
+  border: none;
+  border-radius: 6px;
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.content__button:hover {
+  background: linear-gradient(135deg, var(--blood-red-bright) 0%, var(--blood-red) 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(140, 3, 3, 0.3);
+}

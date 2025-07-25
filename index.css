@@ -10,6 +10,9 @@
 @import url(./blocks/content-components.css);
 @import url(./blocks/kindred.css);
 @import url(./blocks/locations.css);
+@import url(./blocks/coteries.css);
+@import url(./blocks/lore-sheets.css);
+@import url(./blocks/additional-reading.css);
 @import url(./blocks/scrollbar.css);
 @import url(./blocks/roller.css);
 @import url(./blocks/roller-buttons.css);

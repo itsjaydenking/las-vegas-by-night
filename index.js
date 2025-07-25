@@ -70,6 +70,15 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         });
         break;
+      case "lore-sheets":
+        loadExternalContent("./sections/lore-sheets.html").then(() => {
+          loadScript("./scripts/loreSheetsSystem.js").then(() => {
+            if (window.initializeLoreSheetsSystem) {
+              window.initializeLoreSheetsSystem();
+            }
+          });
+        });
+        break;
       case "diceroller":
         loadExternalContent("./sections/diceroller.html");
         break;
@@ -82,11 +91,29 @@ document.addEventListener("DOMContentLoaded", () => {
       case "home":
         loadExternalContent("./sections/home.html");
         break;
+      case "additional":
+        loadExternalContent("./sections/additional-reading.html").then(() => {
+          loadScript("./scripts/additionalReadingSystem.js").then(() => {
+            if (window.initializeAdditionalReadingSystem) {
+              window.initializeAdditionalReadingSystem();
+            }
+          });
+        });
+        break;
+      case "coteries":
+        loadExternalContent("./sections/coteries.html").then(() => {
+          loadScript("./scripts/coteriesSystem.js").then(() => {
+            if (window.initializeCoteriesSystem) {
+              window.initializeCoteriesSystem();
+            }
+          });
+        });
+        break;
       default:
         loadExternalContent("./sections/default.html");
     }
   }
 
   // Load default content
-  loadSection("home");
+  loadSection("changelog");
 });

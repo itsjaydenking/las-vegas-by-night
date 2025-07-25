@@ -1,0 +1,329 @@
+/* Category Navigation */
+.reading-nav {
+  margin: 2rem 0;
+}
+
+.reading-nav__categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.reading-nav__category {
+  margin: 0;
+}
+
+.reading-nav__category-button {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(248, 249, 250, 0.9) 100%);
+  border: 1px solid rgba(140, 3, 3, 0.3);
+  border-radius: 8px;
+  color: var(--off-black);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.reading-nav__category-button:hover {
+  background: linear-gradient(135deg, rgba(140, 3, 3, 0.1) 0%, rgba(140, 3, 3, 0.05) 100%);
+  border-color: var(--blood-red);
+  color: var(--blood-red);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(140, 3, 3, 0.2);
+}
+
+.reading-nav__category-button--active {
+  background: linear-gradient(135deg, var(--blood-red) 0%, rgba(140, 3, 3, 0.8) 100%);
+  border-color: var(--blood-red-bright);
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(140, 3, 3, 0.3);
+}
+
+.reading-nav__category-button--active:hover {
+  background: linear-gradient(135deg, var(--blood-red-bright) 0%, var(--blood-red) 100%);
+}
+
+/* Reading Display */
+.reading-display {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  border: 1px solid rgba(140, 3, 3, 0.2);
+  min-height: 200px;
+}
+
+.reading-display__placeholder {
+  text-align: center;
+  padding: 2rem;
+  color: var(--grey);
+  font-style: italic;
+}
+
+.reading-category-info {
+  margin-bottom: 2rem;
+}
+
+/* Document List */
+.document-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.document-card {
+  padding: 1.25rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 249, 250, 0.8) 100%);
+  border: 1px solid rgba(140, 3, 3, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.document-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(140, 3, 3, 0.2);
+  border-color: var(--blood-red);
+}
+
+.document-card__title {
+  margin: 0 0 0.5rem 0;
+  color: var(--blood-red);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.document-card__subtitle {
+  margin: 0 0 0.5rem 0;
+  font-style: italic;
+  color: var(--dark-grey);
+  font-size: 0.9rem;
+}
+
+.document-card__type {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--grey);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Specific Document Display */
+.specific-document-display {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  border: 2px solid var(--blood-red);
+  box-shadow: 0 4px 12px rgba(140, 3, 3, 0.15);
+}
+
+.specific-document-info {
+  max-width: 100%;
+}
+
+.document-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(140, 3, 3, 0.3);
+}
+
+.document-subtitle {
+  margin: 0.5rem 0;
+  font-style: italic;
+  color: var(--dark-grey);
+  font-size: 1.1rem;
+}
+
+.document-meta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.document-type {
+  color: var(--blood-red);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.document-author {
+  color: var(--dark-grey);
+}
+
+.document-classification {
+  text-align: center;
+  font-weight: bold;
+  color: var(--blood-red);
+  background: rgba(140, 3, 3, 0.1);
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.document-text {
+  font-family: 'Courier New', monospace;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--blood-red);
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+/* House Rules Specific Styling */
+.document-preamble {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(140, 3, 3, 0.1) 0%, rgba(140, 3, 3, 0.05) 100%);
+  border-radius: 8px;
+  border-left: 4px solid var(--blood-red);
+}
+
+.document-preamble blockquote {
+  margin: 0;
+  font-style: italic;
+  color: var(--off-black);
+}
+
+.house-rules-list {
+  margin: 2rem 0;
+}
+
+.house-rule {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  border-left: 4px solid var(--blood-red);
+}
+
+.house-rule__header {
+  margin-bottom: 1rem;
+}
+
+.house-rule__title {
+  margin: 0 0 0.5rem 0;
+  color: var(--blood-red);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.house-rule__quote {
+  margin: 0 0 0.5rem 0;
+  font-style: italic;
+  color: var(--dark-grey);
+  font-size: 1rem;
+}
+
+.house-rule__content {
+  line-height: 1.6;
+}
+
+/* Vocabulary Specific Styling */
+.vocabulary-section {
+  margin: 2rem 0;
+}
+
+.vocabulary-terms,
+.vocabulary-phrases {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.vocabulary-term,
+.vocabulary-phrase {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid var(--blood-red);
+}
+
+.vocabulary-term__word,
+.vocabulary-phrase__text {
+  margin: 0 0 0.5rem 0;
+  color: var(--blood-red);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.vocabulary-phrase__text {
+  font-style: italic;
+}
+
+.vocabulary-term__definition,
+.vocabulary-phrase__meaning {
+  margin: 0 0 0.5rem 0;
+  line-height: 1.5;
+}
+
+.vocabulary-term__breakdown {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+}
+
+.vocabulary-term__breakdown li {
+  margin-bottom: 0.25rem;
+  font-family: 'Courier New', monospace;
+}
+
+.vocabulary-term__usage,
+.vocabulary-phrase__usage {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.9rem;
+  color: var(--dark-grey);
+}
+
+.vocabulary-term__note {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.9rem;
+  color: var(--blood-red);
+}
+
+/* Etiquette Guide Styling */
+.guidelines-list {
+  margin: 1.5rem 0;
+}
+
+.guideline {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid var(--blood-red);
+}
+
+.guideline__title {
+  margin: 0 0 0.5rem 0;
+  color: var(--blood-red);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.guideline__content {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.document-notes {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(74, 144, 226, 0.05) 100%);
+  border-radius: 6px;
+  border-left: 3px solid #4a90e2;
+}

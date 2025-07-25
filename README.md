@@ -1,6 +1,6 @@
-# Las Vegas by Night
+# Las Vegas: Sin City by Night
 
-**Las Vegas by Night** is an interactive storyteller's toolkit and comprehensive fan-made supplement for Vampire: The Masquerade 5th Edition, exploring the dark underbelly and supernatural politics of Sin City.
+**Sin City by Night** is an interactive storyteller's toolkit and comprehensive fan-made supplement for Vampire: The Masquerade 5th Edition, exploring the dark underbelly and supernatural politics of Sin City.
 
 ## Overview
 
@@ -65,19 +65,21 @@ Step into the neon-lit shadows of Las Vegas, where ancient Kindred manipulate ca
 ## Current Sections
 
 ### ✅ **Implemented**
+
 - **🏠 Home**: Welcome page with toolkit overview and getting started guide
 - **🎲 Dice Roller**: Full V5 mechanics with hunger dice, rouse checks, and willpower rerolls
 - **🩸 Kindred Database**: Interactive clan browsing with detailed character profiles
 - **🌆 Locations Guide**: Three-tier location system with rich lore and plot hooks
 - **📜 History**: Comprehensive timeline from frontier days to modern surveillance state
+- **👥 Coteries of Las Vegas**: Complete coterie type system with 15 different types
+- **📋 Lore Sheets**: V5-style backgrounds across 6 categories with character connections
+- **📚 Additional Reading**: Reference materials, House Rules, and terminology guides
 - **📜 Changelog**: Detailed version history and development progress
+- **🔗 Resources**: Links to official materials and community tools
 
 ### 🚧 **In Development**
-- **👥 Coteries of Las Vegas**: Group dynamics and pack structures
-- **📋 Lore Sheets**: V5-style backgrounds and chronicle hooks
+
 - **🎭 Chronicles of Las Vegas**: Pre-written story scenarios
-- **📖 Additional Reading**: Expanded lore and reference materials
-- **🔗 Resources**: Links to official materials and community tools
 
 ## Getting Started
 
@@ -166,17 +168,20 @@ Step into the neon-lit shadows of Las Vegas, where ancient Kindred manipulate ca
 ### Adding Content
 
 #### New Sections
+
 1. Create HTML file in `sections/` directory
 2. Add navigation button to `index.html` sidebar
 3. Update JavaScript router in `index.js`
 4. Add corresponding CSS in `blocks/` if needed
 
 #### Expanding Kindred Database
+
 1. Edit `scripts/kindredSystem.js`
 2. Add character objects to clan arrays in `kindredData`
 3. Include full V5 statistics and background information
 
 #### Adding Locations
+
 1. Edit `scripts/locationsSystem.js`
 2. Add location objects to appropriate area arrays in `locationData`
 3. Include plot hooks, security information, and Kindred presence
@@ -233,23 +238,28 @@ This project follows the **Dark Pack Community Content** guidelines established 
 ## Credits & Acknowledgments
 
 **Created By:**
+
 - **Bardhouse Studios** - Primary development and design
 - **Ebonmane Ink Creative Studios** - Content creation and lore development
 
 **Special Thanks:**
+
 - The World of Darkness community for inspiration and feedback
 - All contributors and playtesters who helped refine the toolkit
 - The storytellers and players who bring these stories to life
 
 **Contributors**
-- MangoSalsa: Setting Lore Continuity 
+
+- MangoSalsa: Setting Lore Continuity
 
 **Inspired By:**
+
 - The rich lore and mechanics of Vampire: The Masquerade 5th Edition
 - The neon-soaked, surveillance-heavy atmosphere of modern Las Vegas
 - Decades of gothic-punk storytelling in the World of Darkness
 
 **Technical Acknowledgments:**
+
 - Modern CSS Grid and Flexbox specifications
 - Web Standards for accessibility and performance
 - Open source community for development best practices
@@ -271,7 +281,7 @@ _"In Las Vegas, everyone's a winner... until they're not."_
 
 ---
 
-**Version:** 0.3.0  
+**Version:** 0.4.0  
 **Last Updated:** July 2025  
 **Compatibility:** Vampire: The Masquerade 5th Edition  
 **Status:** Active Development
