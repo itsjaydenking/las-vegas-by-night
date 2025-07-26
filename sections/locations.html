@@ -37,6 +37,34 @@
     </ul>
   </nav>
 
+  <!-- Location Search -->
+  <div class="location-search" id="location-search">
+    <h3 class="content__heading">🔍 Search Locations</h3>
+    <div class="location-search__input-group">
+      <input
+        type="text"
+        id="location-search-input"
+        class="location-search__input"
+        placeholder="Search by location name, type, or description..."
+        autocomplete="off"
+      />
+      <button
+        id="location-search-clear"
+        class="location-search__clear"
+        style="display: none"
+      >
+        ✕
+      </button>
+    </div>
+    <div
+      id="location-search-results"
+      class="location-search__results"
+      style="display: none"
+    >
+      <!-- Search results will be populated here -->
+    </div>
+  </div>
+
   <!-- Area Navigation (shown after category selection) -->
   <nav class="area-nav" id="area-nav" style="display: none">
     <h4 class="content__subheading" id="area-nav-title">Areas</h4>
