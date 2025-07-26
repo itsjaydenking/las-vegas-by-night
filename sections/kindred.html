@@ -1,12 +1,18 @@
 <section class="content scrollbar" id="view-panel">
   <h2 class="content__title">🩸 Kindred of Las Vegas</h2>
+  <p class="content__body">
+    Explore the various Kindred clans that inhabit the shadows of Las Vegas.
+  </p>
 
   <!-- Clan Navigation -->
   <nav class="kindred-nav">
     <h3 class="content__heading">Kindred Clans</h3>
+    <p class="content__body">Select a clan to view its details.</p>
     <ul class="kindred-nav__list">
       <li class="kindred-nav__item">
-        <button class="kindred-nav__button" data-clan="banu-haqim">Banu Haqim</button>
+        <button class="kindred-nav__button" data-clan="banu-haqim">
+          Banu Haqim
+        </button>
       </li>
       <li class="kindred-nav__item">
         <button class="kindred-nav__button" data-clan="brujah">Brujah</button>
@@ -21,16 +27,24 @@
         <button class="kindred-nav__button" data-clan="hecata">Hecata</button>
       </li>
       <li class="kindred-nav__item">
-        <button class="kindred-nav__button" data-clan="lasombra">Lasombra</button>
+        <button class="kindred-nav__button" data-clan="lasombra">
+          Lasombra
+        </button>
       </li>
       <li class="kindred-nav__item">
-        <button class="kindred-nav__button" data-clan="malkavian">Malkavian</button>
+        <button class="kindred-nav__button" data-clan="malkavian">
+          Malkavian
+        </button>
       </li>
       <li class="kindred-nav__item">
-        <button class="kindred-nav__button" data-clan="ministry">The Ministry</button>
+        <button class="kindred-nav__button" data-clan="ministry">
+          The Ministry
+        </button>
       </li>
       <li class="kindred-nav__item">
-        <button class="kindred-nav__button" data-clan="nosferatu">Nosferatu</button>
+        <button class="kindred-nav__button" data-clan="nosferatu">
+          Nosferatu
+        </button>
       </li>
       <li class="kindred-nav__item">
         <button class="kindred-nav__button" data-clan="ravnos">Ravnos</button>
@@ -39,16 +53,22 @@
         <button class="kindred-nav__button" data-clan="salubri">Salubri</button>
       </li>
       <li class="kindred-nav__item">
-        <button class="kindred-nav__button" data-clan="thin-blood">Thin-Blood</button>
+        <button class="kindred-nav__button" data-clan="thin-blood">
+          Thin-Blood
+        </button>
       </li>
       <li class="kindred-nav__item">
-        <button class="kindred-nav__button" data-clan="toreador">Toreador</button>
+        <button class="kindred-nav__button" data-clan="toreador">
+          Toreador
+        </button>
       </li>
       <li class="kindred-nav__item">
         <button class="kindred-nav__button" data-clan="tremere">Tremere</button>
       </li>
       <li class="kindred-nav__item">
-        <button class="kindred-nav__button" data-clan="tzimisce">Tzimisce</button>
+        <button class="kindred-nav__button" data-clan="tzimisce">
+          Tzimisce
+        </button>
       </li>
       <li class="kindred-nav__item">
         <button class="kindred-nav__button" data-clan="ventrue">Ventrue</button>
@@ -56,15 +76,45 @@
     </ul>
   </nav>
 
+  <!-- Kindred Search -->
+  <div class="kindred-search" id="kindred-search">
+    <h3 class="content__heading">🔍 Search Kindred</h3>
+    <div class="kindred-search__input-group">
+      <input
+        type="text"
+        id="kindred-search-input"
+        class="kindred-search__input"
+        placeholder="Search by character name, clan, epitaph, or description..."
+        autocomplete="off"
+      />
+      <button
+        id="kindred-search-clear"
+        class="kindred-search__clear"
+        style="display: none"
+      >
+        ✕
+      </button>
+    </div>
+    <div
+      id="kindred-search-results"
+      class="kindred-search__results"
+      style="display: none"
+    >
+      <!-- Search results will be populated here -->
+    </div>
+  </div>
+
   <!-- Clan Information Display -->
   <div id="clan-display" class="clan-display">
     <div class="clan-display__placeholder">
-      <p class="content__body">Select a clan above to view their presence in Las Vegas.</p>
+      <p class="content__body">
+        Select a clan above to view their presence in Las Vegas.
+      </p>
     </div>
   </div>
 
   <!-- Character Information Display -->
-  <div id="character-display" class="character-display" style="display: none;">
+  <div id="character-display" class="character-display" style="display: none">
     <!-- Character info will be dynamically loaded here -->
   </div>
 </section>

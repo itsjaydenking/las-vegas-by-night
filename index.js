@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         break;
       case "kindred":
         loadExternalContent("./sections/kindred.html").then(() => {
-          loadScript("./scripts/kindredSystem.js").then(() => {
+          loadScript("./scripts/kindredSystem.js", "module").then(() => {
             if (window.initializeKindredSystem) {
               window.initializeKindredSystem();
             }
@@ -115,5 +115,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Load default content
-  loadSection("locations");
+  loadSection("kindred");
 });
