@@ -299,169 +299,188 @@ const loreSheetData = {
   },
   characters: {
     name: "Character Connections",
-    description: "These Lore Sheets represent your character's personal relationships, mentorships, or rivalries with specific notable Kindred in Las Vegas.",
+    description:
+      "These Lore Sheets represent your character's personal relationships, mentorships, or rivalries with specific notable Kindred in Las Vegas.",
     sheets: {
       "everett-protege": {
         name: "Prince Everett's Protégé",
-        description: "You have a direct connection to Prince Carlton Everett, whether as a student of his business empire, a political ally, or someone he's personally invested in developing.",
+        description:
+          "You have a direct connection to Prince Carlton Everett, whether as a student of his business empire, a political ally, or someone he's personally invested in developing.",
         category: "Character Connections",
         benefits: [
           "• Royal Access: Add 2 dice to Resources rolls related to Strip business ventures",
           "•• Political Backing: Prince Everett occasionally intervenes on your behalf in Camarilla politics",
           "••• Inner Circle: You attend private meetings and have advance knowledge of major political decisions",
           "•••• Heir Apparent: You're being groomed for significant responsibility within the Camarilla hierarchy",
-          "••••• Right Hand: You serve as Prince Everett's most trusted advisor and proxy in critical matters"
+          "••••• Right Hand: You serve as Prince Everett's most trusted advisor and proxy in critical matters",
         ],
-        restrictions: "Must have Status (Camarilla) •+ and compelling reason for Prince's interest",
+        restrictions:
+          "Must have Status (Camarilla) •+ and compelling reason for Prince's interest",
         plotHooks: [
           "Rival Primogen attempt to turn you against the Prince or vice versa",
           "Your close connection makes you a target for the Prince's enemies",
           "Political decisions you influence have far-reaching consequences you didn't anticipate",
-          "The Prince's expectations and demands on your time create personal complications"
+          "The Prince's expectations and demands on your time create personal complications",
         ],
-        quote: "Power shared is power multiplied - but loyalty tested is loyalty proven."
+        quote:
+          "Power shared is power multiplied - but loyalty tested is loyalty proven.",
       },
       "data-ghost-network": {
         name: "Data Ghost's Network",
-        description: "You're part of the information network run by the mysterious Data Ghost, gaining access to digital intelligence and surveillance capabilities.",
+        description:
+          "You're part of the information network run by the mysterious Data Ghost, gaining access to digital intelligence and surveillance capabilities.",
         category: "Character Connections",
         benefits: [
           "• Digital Eyes: Access to basic surveillance footage and digital records throughout Vegas",
           "•• Information Trading: You can exchange secrets for favors with other network members",
           "••• Deep Web Access: Obtain deleted records, encrypted communications, and hidden digital assets",
           "•••• Ghost Protocol: The Data Ghost personally handles your most sensitive information needs",
-          "••••• Network Administrator: You help run part of the information network and recruit new assets"
+          "••••• Network Administrator: You help run part of the information network and recruit new assets",
         ],
-        restrictions: "Must have Technology •+ or compelling reason for network acceptance",
+        restrictions:
+          "Must have Technology •+ or compelling reason for network acceptance",
         plotHooks: [
           "Information you gather puts innocent people in danger",
           "Second Inquisition agents attempt to trace network connections back to you",
           "Rival information brokers try to turn you or eliminate network members",
-          "The Data Ghost requests increasingly morally questionable tasks"
+          "The Data Ghost requests increasingly morally questionable tasks",
         ],
-        quote: "In the digital age, information doesn't just flow - it floods."
+        quote: "In the digital age, information doesn't just flow - it floods.",
       },
       "ashford-legacy": {
         name: "Ashford Family Debt",
-        description: "Your family has a generations-old connection to the Ashford bloodline, whether through business partnerships, blood bonds, or ancient favors.",
+        description:
+          "Your family has a generations-old connection to the Ashford bloodline, whether through business partnerships, blood bonds, or ancient favors.",
         category: "Character Connections",
         benefits: [
           "• Family History: Knowledge of Ashford business operations and hidden assets",
           "•• Old Contracts: Access to legitimate business fronts and financial resources",
           "••• Blood Memory: The Ashfords share family secrets and strategic intelligence with you",
           "•••• Legacy Guardian: You're entrusted with protecting specific Ashford interests",
-          "••••• Chosen Heir: The Ashfords consider you family and include you in major decisions"
+          "••••• Chosen Heir: The Ashfords consider you family and include you in major decisions",
         ],
-        restrictions: "Must have compelling family history or blood bond connection to Ashfords",
+        restrictions:
+          "Must have compelling family history or blood bond connection to Ashfords",
         plotHooks: [
           "Ancient family enemies resurface seeking revenge against the Ashfords",
           "Modern business deals conflict with traditional Ashford values",
           "You discover dark secrets about your family's original connection to the Ashfords",
-          "Rival vampire families attempt to use you against the Ashfords"
+          "Rival vampire families attempt to use you against the Ashfords",
         ],
-        quote: "Blood runs deeper than water, and debts deeper than blood."
+        quote: "Blood runs deeper than water, and debts deeper than blood.",
       },
       "casino-baron": {
         name: "Casino Baron's Favor",
-        description: "You've earned the respect and patronage of one of Las Vegas's major casino-owning vampires through exceptional service or mutual benefit.",
+        description:
+          "You've earned the respect and patronage of one of Las Vegas's major casino-owning vampires through exceptional service or mutual benefit.",
         category: "Character Connections",
         benefits: [
           "• House Credit: Free access to casino services and limited financial backing",
           "•• VIP Treatment: Priority reservations, private gaming rooms, and exclusive events",
           "••• Business Partner: Joint ventures and shared profits from casino operations",
           "•••• Protected Investment: The Baron ensures your safety and success in casino-related endeavors",
-          "••••• Silent Partner: You effectively co-own significant casino interests with the Baron"
+          "••••• Silent Partner: You effectively co-own significant casino interests with the Baron",
         ],
-        restrictions: "Must have proven value to casino operations or compelling mutual interest",
+        restrictions:
+          "Must have proven value to casino operations or compelling mutual interest",
         plotHooks: [
           "Federal investigations threaten to expose your casino connections",
           "Rival casinos attempt to poach you or sabotage your relationships",
           "The Baron's enemies target you to hurt their business empire",
-          "Moral conflicts arise between casino profits and innocent victims"
+          "Moral conflicts arise between casino profits and innocent victims",
         ],
-        quote: "In Vegas, the house always wins - unless you become the house."
+        quote: "In Vegas, the house always wins - unless you become the house.",
       },
       "thin-blood-mentor": {
         name: "Thin-Blood Revolutionary",
-        description: "You're connected to the underground movement of Thin-Bloods fighting for recognition and rights in vampire society.",
+        description:
+          "You're connected to the underground movement of Thin-Bloods fighting for recognition and rights in vampire society.",
         category: "Character Connections",
         benefits: [
           "• Underground Railway: Safe houses and escape routes throughout the city",
           "•• Alchemy Secrets: Access to Blood Alchemy formulas and rare ingredients",
           "••• Revolutionary Network: Coordination with Thin-Blood cells in other cities",
           "•••• Movement Leader: You help organize and direct Thin-Blood resistance activities",
-          "••••• True Revolutionary: Your actions inspire Thin-Bloods across multiple domains"
+          "••••• True Revolutionary: Your actions inspire Thin-Bloods across multiple domains",
         ],
-        restrictions: "Must be Thin-Blood or have compelling reason for acceptance by the movement",
+        restrictions:
+          "Must be Thin-Blood or have compelling reason for acceptance by the movement",
         plotHooks: [
           "Full-blood vampires infiltrate the movement to destroy it from within",
           "Government agencies attempt to recruit Thin-Blood revolutionaries",
           "Philosophical splits emerge between accommodation and violent revolution",
-          "Your revolutionary activities endanger innocent Thin-Bloods"
+          "Your revolutionary activities endanger innocent Thin-Bloods",
         ],
-        quote: "They call us weak blood, but we are the future they fear."
+        quote: "They call us weak blood, but we are the future they fear.",
       },
       "gangrel-pack": {
         name: "Desert Pack Bond",
-        description: "You're accepted into a pack of Gangrel who control territory in the desert surrounding Las Vegas.",
+        description:
+          "You're accepted into a pack of Gangrel who control territory in the desert surrounding Las Vegas.",
         category: "Character Connections",
         benefits: [
           "• Pack Hunting: Add 2 dice to Survival rolls in desert environments",
           "•• Territorial Knowledge: Detailed knowledge of hidden routes and safe zones in the Mojave",
           "••• Pack Protection: Other pack members will come to your aid when called",
           "•••• Alpha Trust: Pack leaders consult you on important territorial decisions",
-          "••••• Pack Alpha: You lead a significant portion of Gangrel desert operations"
+          "••••• Pack Alpha: You lead a significant portion of Gangrel desert operations",
         ],
-        restrictions: "Must have Animalism •+ or proven ability to survive in desert conditions",
+        restrictions:
+          "Must have Animalism •+ or proven ability to survive in desert conditions",
         plotHooks: [
           "Government black sites in pack territory threaten supernatural secrecy",
           "Werewolf packs dispute Gangrel territorial claims",
           "Pack members are hunted by Second Inquisition desert patrols",
-          "Internal pack politics create dangerous leadership challenges"
+          "Internal pack politics create dangerous leadership challenges",
         ],
-        quote: "The desert provides for those who understand its ways."
+        quote: "The desert provides for those who understand its ways.",
       },
       "sire-legacy": {
         name: "Prestigious Lineage",
-        description: "Your sire is a renowned figure in vampire society, and their reputation opens doors while creating expectations.",
+        description:
+          "Your sire is a renowned figure in vampire society, and their reputation opens doors while creating expectations.",
         category: "Character Connections",
         benefits: [
           "• Famous Name: Recognition and initial respect from other vampires",
           "•• Inherited Contacts: Access to your sire's network of allies and resources",
           "••• Legacy Resources: Financial assets and properties left for your use",
           "•••• Bloodline Prestige: Major figures in vampire society seek your favor",
-          "••••• Living Legend: Your sire's reputation makes you a significant political figure"
+          "••••• Living Legend: Your sire's reputation makes you a significant political figure",
         ],
-        restrictions: "Must have compelling backstory explaining prestigious sire",
+        restrictions:
+          "Must have compelling backstory explaining prestigious sire",
         plotHooks: [
           "Your sire's ancient enemies transfer their hatred to you",
           "High expectations from vampire society create constant pressure",
           "You discover dark secrets about your sire's past that threaten their reputation",
-          "Rival bloodlines attempt to eliminate your lineage entirely"
+          "Rival bloodlines attempt to eliminate your lineage entirely",
         ],
-        quote: "Great names cast long shadows - and darker secrets."
+        quote: "Great names cast long shadows - and darker secrets.",
       },
       "malkavian-oracle": {
         name: "Prophet's Chosen",
-        description: "A powerful Malkavian oracle has taken special interest in you, sharing visions and cryptic guidance.",
+        description:
+          "A powerful Malkavian oracle has taken special interest in you, sharing visions and cryptic guidance.",
         category: "Character Connections",
         benefits: [
           "• Prophetic Warnings: Occasional advance knowledge of dangers or opportunities",
           "•• Oracle's Wisdom: Add 2 dice to Investigation rolls when researching supernatural mysteries",
           "••• Vision Sharing: Direct communication with the oracle through shared madness",
           "•••• Fate's Agent: Your actions consistently align with prophetic visions",
-          "••••• Prophet's Voice: Other vampires seek your interpretations of the oracle's visions"
+          "••••• Prophet's Voice: Other vampires seek your interpretations of the oracle's visions",
         ],
-        restrictions: "Must have Auspex •+ or compelling reason for oracle's interest",
+        restrictions:
+          "Must have Auspex •+ or compelling reason for oracle's interest",
         plotHooks: [
           "False prophets spread competing visions to create confusion",
           "The oracle's visions predict catastrophic events you feel compelled to prevent",
           "Government psychics attempt to study your connection to supernatural prophecy",
-          "Following prophetic visions leads to morally questionable actions"
+          "Following prophetic visions leads to morally questionable actions",
         ],
-        quote: "Madness and truth dance together in the space between heartbeats."
-      }
-    }
+        quote:
+          "Madness and truth dance together in the space between heartbeats.",
+      },
+    },
   },
   mysteries: {
     name: "Mysteries & Secrets",
@@ -536,7 +555,6 @@ const loreSheetData = {
       },
     },
   },
-
 };
 
 // Initialize the lore sheets system
@@ -573,6 +591,7 @@ function initializeLoreSheetsSystem() {
     activeButton.classList.add("lore-nav__category-button--active");
   }
 
+  // Update the displayCategory function to only show the better preview system
   function displayCategory(categoryKey) {
     const categoryData = loreSheetData[categoryKey];
 
@@ -581,41 +600,16 @@ function initializeLoreSheetsSystem() {
       return;
     }
 
-    // Hide specific lore display
+    // Hide specific lore sheet display
     specificLoreDisplay.style.display = "none";
 
-    // Show and populate type navigation
-    typeNav.style.display = "block";
-    typeNavTitle.textContent = categoryData.name;
+    // Hide the old type navigation (this is what's causing the duplicate)
+    const loreTypeNav = document.getElementById("lore-type-nav");
+    if (loreTypeNav) {
+      loreTypeNav.style.display = "none";
+    }
 
-    const typeButtons = Object.entries(categoryData.sheets)
-      .map(
-        ([key, sheet]) => `
-      <li class="lore-type-nav__item">
-        <button class="lore-type-nav__button" data-category="${categoryKey}" data-sheet="${key}">
-          ${sheet.name}
-        </button>
-      </li>
-    `
-      )
-      .join("");
-
-    typeNavList.innerHTML = typeButtons;
-
-    // Add event listeners to type buttons
-    const newTypeButtons = typeNavList.querySelectorAll(
-      ".lore-type-nav__button"
-    );
-    newTypeButtons.forEach((button) => {
-      button.addEventListener("click", (e) => {
-        const categoryKey = button.getAttribute("data-category");
-        const sheetKey = button.getAttribute("data-sheet");
-        setActiveTypeButton(button);
-        displayLoreSheet(categoryKey, sheetKey);
-      });
-    });
-
-    // Show category information
+    // Show the better category information with preview cards
     loreSheetDisplay.innerHTML = `
       <div class="lore-category-info">
         <h3 class="content__heading">${categoryData.name}</h3>
@@ -637,14 +631,14 @@ function initializeLoreSheetsSystem() {
       </div>
     `;
 
-    // Add click listeners to preview cards
-    const previewCards = loreSheetDisplay.querySelectorAll(
+    // Add click listeners to lore sheet preview cards
+    const loreSheetPreviews = loreSheetDisplay.querySelectorAll(
       ".lore-sheet-preview"
     );
-    previewCards.forEach((card) => {
-      card.addEventListener("click", (e) => {
-        const categoryKey = card.getAttribute("data-category");
-        const sheetKey = card.getAttribute("data-sheet");
+    loreSheetPreviews.forEach((preview) => {
+      preview.addEventListener("click", (e) => {
+        const categoryKey = preview.getAttribute("data-category");
+        const sheetKey = preview.getAttribute("data-sheet");
         displayLoreSheet(categoryKey, sheetKey);
       });
     });
