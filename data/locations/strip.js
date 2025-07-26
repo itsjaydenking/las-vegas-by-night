@@ -1,0 +1,35 @@
+import { LocationBuilder } from './locationBuilder.js';
+
+export const stripLocations = [
+  LocationBuilder.create()
+    .id("bellagio")
+    .name("Bellagio")
+    .type("Casino Resort")
+    .shortDescription("Elegant fountains hide elegant predators.")
+    .overview("The Bellagio represents the pinnacle of Vegas sophistication, its dancing fountains a mesmerizing facade for the darker dealings within.")
+    .kindredPresence("Toreador influence runs strong here, with several of the clan using the resort's art collection and cultural events as both feeding grounds and territory markers.")
+    .mortalOperations("High-stakes gambling, world-class dining, and exclusive shopping create a constant flow of wealthy mortals.")
+    .plotHooks("Art theft involving cursed paintings, a Toreador's obsession with a mortal artist, or territorial disputes over gallery space during major exhibitions.")
+    .established("1998")
+    .owner("MGM Resorts International")
+    .keyFeatures(["Conservatory & Botanical Gardens", "Bellagio Gallery of Fine Art", "Fountains of Bellagio", "High-limit gaming areas"])
+    .securityLevel("Maximum (with discrete exceptions)")
+    .kindredAccess("Limited to established contacts")
+    .build(),
+
+  LocationBuilder.create()
+    .id("caesars-palace")
+    .name("Caesars Palace")
+    .type("Casino Resort")
+    .shortDescription("Where modern emperors hold court.")
+    .overview("Built to evoke the grandeur of ancient Rome, Caesars Palace has become a throne room for those who consider themselves the true rulers of Las Vegas.")
+    .kindredPresence("Ventrue have maintained a strong presence here since the 1980s, using the Forum Shops and high-roller suites as neutral meeting grounds.")
+    .mortalOperations("Celebrity residencies, championship boxing matches, and convention business bring a steady stream of high-profile mortals.")
+    .plotHooks("Corporate espionage during major conventions, gladiatorial contests between Kindred, or ancient Roman artifacts with supernatural properties appearing in the shops.")
+    .established("1966")
+    .owner("Caesars Entertainment")
+    .keyFeatures(["The Colosseum", "Forum Shops", "Garden of the Gods Pool", "Multiple hotel towers"])
+    .securityLevel("High (variable by area)")
+    .kindredAccess("Established through long-term arrangements")
+    .build()
+];

@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // Load dice roller script if it's the dice roller section
         if (url.includes("diceroller")) {
           loadScript("./scripts/diceSystem.js").then(() => {
-            // Initialize dice roller after script loads
             if (window.initializeDiceRoller) {
               window.initializeDiceRoller();
             }
@@ -37,10 +36,11 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-  function loadScript(src) {
+  function loadScript(src, type = "text/javascript") {
     return new Promise((resolve, reject) => {
       const script = document.createElement("script");
       script.src = src;
+      script.type = type;
       script.onload = resolve;
       script.onerror = reject;
       document.head.appendChild(script);
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         break;
       case "locations":
         loadExternalContent("./sections/locations.html").then(() => {
-          loadScript("./scripts/locationsSystem.js").then(() => {
+          loadScript("./scripts/locationsSystem.js", "module").then(() => {
             if (window.initializeLocationsSystem) {
               window.initializeLocationsSystem();
             }
@@ -115,5 +115,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Load default content
-  loadSection("changelog");
+  loadSection("locations");
 });
