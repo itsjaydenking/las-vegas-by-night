@@ -140,6 +140,8 @@
   border: 2px solid var(--blood-red);
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(140, 3, 3, 0.2);
+    position: sticky;
+
 }
 
 .character-display__header {
@@ -149,6 +151,7 @@
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid rgba(140, 3, 3, 0.3);
+  
 }
 
 .character-display__name {

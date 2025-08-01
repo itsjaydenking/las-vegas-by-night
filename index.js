@@ -115,5 +115,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Load default content
-  loadSection("kindred");
+  loadSection("home");
 });
