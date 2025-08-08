@@ -3,40 +3,50 @@ let currentRolls = { normal: [], hunger: [] };
 let currentDifficulty = null;
 let rerollMode = false;
 let selectedDice = [];
+let isInitialized = false;
 
 function initializeDiceRoller() {
-  const rollButton = document.getElementById("roll-button");
-  const rouseButton = document.getElementById("rouse-button");
-  const clearButton = document.getElementById("clear-button");
-  const willpowerButton = document.getElementById("willpower-reroll-button");
-  const executeRerollButton = document.getElementById("execute-reroll-button");
-  const cancelRerollButton = document.getElementById("cancel-reroll-button");
-  const addNormalButton = document.getElementById("add-normal-button");
-  const addHungerButton = document.getElementById("add-hunger-button");
+  if (isInitialized) {
+    return;
+  }
 
-  if (rollButton) {
-    rollButton.addEventListener("click", handleDiceRoll);
+  // Use event delegation on the container
+  const viewPanel = document.getElementById("view-panel");
+  if (viewPanel) {
+    viewPanel.addEventListener("click", handleDiceRollerClicks);
   }
-  if (rouseButton) {
-    rouseButton.addEventListener("click", handleRouseCheck);
-  }
-  if (clearButton) {
-    clearButton.addEventListener("click", clearDice);
-  }
-  if (willpowerButton) {
-    willpowerButton.addEventListener("click", startWillpowerReroll);
-  }
-  if (executeRerollButton) {
-    executeRerollButton.addEventListener("click", executeReroll);
-  }
-  if (cancelRerollButton) {
-    cancelRerollButton.addEventListener("click", cancelReroll);
-  }
-  if (addNormalButton) {
-    addNormalButton.addEventListener("click", () => addDie(false));
-  }
-  if (addHungerButton) {
-    addHungerButton.addEventListener("click", () => addDie(true));
+
+  isInitialized = true;
+}
+
+function handleDiceRollerClicks(event) {
+  const target = event.target;
+
+  switch (target.id) {
+    case "roll-button":
+      handleDiceRoll();
+      break;
+    case "rouse-button":
+      handleRouseCheck();
+      break;
+    case "clear-button":
+      clearDice();
+      break;
+    case "willpower-reroll-button":
+      startWillpowerReroll();
+      break;
+    case "execute-reroll-button":
+      executeReroll();
+      break;
+    case "cancel-reroll-button":
+      cancelReroll();
+      break;
+    case "add-normal-button":
+      addDie(false);
+      break;
+    case "add-hunger-button":
+      addDie(true);
+      break;
   }
 }
 

@@ -1,3 +1,20 @@
+function loadExternalContent(url) {
+  return fetch(url)
+    .then((response) => response.text())
+    .then((html) => {
+      viewPanel.innerHTML = html;
+
+      // Load dice roller script if it's the dice roller section
+      if (url.includes("diceroller")) {
+        return loadScript("./scripts/diceSystem.js");
+        // Remove the .then() call to initializeDiceRoller()
+      }
+    })
+    .catch((error) => {
+      console.error("Error loading content:", error);
+    });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const viewPanel = document.getElementById("view-panel");
   const navButtons = document.querySelectorAll(".nav__button");
